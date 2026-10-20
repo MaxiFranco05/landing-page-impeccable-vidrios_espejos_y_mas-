@@ -6,8 +6,6 @@
   <title>Vidrios, espejos y más | Taller Artesanal en General Alvear, Mendoza</title>
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
-  <!-- Netlify Identity Widget para gestión de usuarios / Sveltia CMS -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
     @font-face {
       font-family: 'Yantramanav';
@@ -1662,19 +1660,6 @@
     </svg>
     <span>Consultar por WhatsApp</span>
   </a>
-
-  <!-- Netlify Identity Redirection Handler -->
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", function(user) {
-        if (!user) {
-          window.netlifyIdentity.on("login", function() {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 
   <!-- CMS Dynamic Hydration Script -->
   <script>

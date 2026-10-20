@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: MaxiFranco05/landing-page-impeccable-vidrios_espejos_y_mas-
   branch: main
 
 # Carpeta donde se suben imágenes desde el panel
