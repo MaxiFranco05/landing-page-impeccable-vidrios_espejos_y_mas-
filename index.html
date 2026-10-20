@@ -7,49 +7,6 @@
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <style>
-    /* Impeccable scaffold layout variables */
-    :root {
-      --r-masthead-brand-x: 0.000%; --r-masthead-brand-y: 0.000%; --r-masthead-brand-w: 40.000%; --r-masthead-brand-h: 10.000%;
-      --r-nav-links-x: 40.000%; --r-nav-links-y: 0.000%; --r-nav-links-w: 30.000%; --r-nav-links-h: 10.000%;
-      --r-nav-cta-x: 72.170%; --r-nav-cta-y: 0.780%; --r-nav-cta-w: 10.470%; --r-nav-cta-h: 7.030%;
-      --r-badges-strip-x: 38.300%; --r-badges-strip-y: 16.280%; --r-badges-strip-w: 23.980%; --r-badges-strip-h: 3.780%;
-      --r-hero-headline-x: 20.000%; --r-hero-headline-y: 20.000%; --r-hero-headline-w: 60.000%; --r-hero-headline-h: 20.000%;
-      --r-hero-headline-cap: 50px; --r-hero-headline-font: 68px; --r-hero-headline-family: 'Yantramanav'; --r-hero-headline-weight: 700;
-      --r-hero-sub-x: 20.000%; --r-hero-sub-y: 30.000%; --r-hero-sub-w: 60.000%; --r-hero-sub-h: 20.000%;
-      --r-hero-cta-x: 41.280%; --r-hero-cta-y: 41.540%; --r-hero-cta-w: 17.440%; --r-hero-cta-h: 7.810%;
-      --r-left-glass-prism-x: 0.000%; --r-left-glass-prism-y: 10.000%; --r-left-glass-prism-w: 20.000%; --r-left-glass-prism-h: 50.000%;
-      --r-right-glass-prism-x: 80.000%; --r-right-glass-prism-y: 0.000%; --r-right-glass-prism-w: 20.000%; --r-right-glass-prism-h: 60.000%;
-      --r-card-mirror-plate-x: 20.000%; --r-card-mirror-plate-y: 50.000%; --r-card-mirror-plate-w: 20.000%; --r-card-mirror-plate-h: 30.000%;
-      --r-card-mirror-caption-x: 19.990%; --r-card-mirror-caption-y: 79.950%; --r-card-mirror-caption-w: 18.750%; --r-card-mirror-caption-h: 10.030%;
-      --r-card-mirror-caption-cap: 14px; --r-card-mirror-caption-font: 21px;
-      --r-card-partition-plate-x: 40.000%; --r-card-partition-plate-y: 50.000%; --r-card-partition-plate-w: 20.000%; --r-card-partition-plate-h: 30.000%;
-      --r-card-partition-caption-x: 40.000%; --r-card-partition-caption-y: 80.000%; --r-card-partition-caption-w: 20.000%; --r-card-partition-caption-h: 10.000%;
-      --r-card-storefront-plate-x: 60.000%; --r-card-storefront-plate-y: 50.000%; --r-card-storefront-plate-w: 30.000%; --r-card-storefront-plate-h: 30.000%;
-      --r-card-storefront-caption-x: 61.340%; --r-card-storefront-caption-y: 79.950%; --r-card-storefront-caption-w: 20.930%; --r-card-storefront-caption-h: 10.030%;
-      --r-lower-card-shower-plate-x: 20.000%; --r-lower-card-shower-plate-y: 90.000%; --r-lower-card-shower-plate-w: 20.000%; --r-lower-card-shower-plate-h: 10.000%;
-      --r-lower-card-doors-plate-x: 40.000%; --r-lower-card-doors-plate-y: 90.000%; --r-lower-card-doors-plate-w: 20.000%; --r-lower-card-doors-plate-h: 10.000%;
-      --r-lower-card-frameless-plate-x: 60.000%; --r-lower-card-frameless-plate-y: 90.000%; --r-lower-card-frameless-plate-w: 30.000%; --r-lower-card-frameless-plate-h: 10.000%;
-    }
-
-    .comp-frame { position: relative; width: 100%; aspect-ratio: 1376 / 768; overflow: hidden; }
-    .r-masthead-brand { position: absolute; left: var(--r-masthead-brand-x); top: var(--r-masthead-brand-y); width: var(--r-masthead-brand-w); height: var(--r-masthead-brand-h); }
-    .r-nav-links { position: absolute; left: var(--r-nav-links-x); top: var(--r-nav-links-y); width: var(--r-nav-links-w); height: var(--r-nav-links-h); }
-    .r-nav-cta { position: absolute; left: var(--r-nav-cta-x); top: var(--r-nav-cta-y); width: var(--r-nav-cta-w); height: var(--r-nav-cta-h); }
-    .r-badges-strip { position: absolute; left: var(--r-badges-strip-x); top: var(--r-badges-strip-y); width: var(--r-badges-strip-w); height: var(--r-badges-strip-h); }
-    .r-hero-headline { position: absolute; left: var(--r-hero-headline-x); top: var(--r-hero-headline-y); width: var(--r-hero-headline-w); height: var(--r-hero-headline-h); }
-    .r-hero-sub { position: absolute; left: var(--r-hero-sub-x); top: var(--r-hero-sub-y); width: var(--r-hero-sub-w); height: var(--r-hero-sub-h); }
-    .r-hero-cta { position: absolute; left: var(--r-hero-cta-x); top: var(--r-hero-cta-y); width: var(--r-hero-cta-w); height: var(--r-hero-cta-h); }
-    .r-left-glass-prism { position: absolute; left: var(--r-left-glass-prism-x); top: var(--r-left-glass-prism-y); width: var(--r-left-glass-prism-w); height: var(--r-left-glass-prism-h); }
-    .r-right-glass-prism { position: absolute; left: var(--r-right-glass-prism-x); top: var(--r-right-glass-prism-y); width: var(--r-right-glass-prism-w); height: var(--r-right-glass-prism-h); }
-    .r-card-mirror-plate { position: absolute; left: var(--r-card-mirror-plate-x); top: var(--r-card-mirror-plate-y); width: var(--r-card-mirror-plate-w); height: var(--r-card-mirror-plate-h); }
-    .r-card-mirror-caption { position: absolute; left: var(--r-card-mirror-caption-x); top: var(--r-card-mirror-caption-y); width: var(--r-card-mirror-caption-w); height: var(--r-card-mirror-caption-h); }
-    .r-card-partition-plate { position: absolute; left: var(--r-card-partition-plate-x); top: var(--r-card-partition-plate-y); width: var(--r-card-partition-plate-w); height: var(--r-card-partition-plate-h); }
-    .r-card-partition-caption { position: absolute; left: var(--r-card-partition-caption-x); top: var(--r-card-partition-caption-y); width: var(--r-card-partition-caption-w); height: var(--r-card-partition-caption-h); }
-    .r-card-storefront-plate { position: absolute; left: var(--r-card-storefront-plate-x); top: var(--r-card-storefront-plate-y); width: var(--r-card-storefront-plate-w); height: var(--r-card-storefront-plate-h); }
-    .r-card-storefront-caption { position: absolute; left: var(--r-card-storefront-caption-x); top: var(--r-card-storefront-caption-y); width: var(--r-card-storefront-caption-w); height: var(--r-card-storefront-caption-h); }
-    .r-lower-card-shower-plate { position: absolute; left: var(--r-lower-card-shower-plate-x); top: var(--r-lower-card-shower-plate-y); width: var(--r-lower-card-shower-plate-w); height: var(--r-lower-card-shower-plate-h); }
-    .r-lower-card-doors-plate { position: absolute; left: var(--r-lower-card-doors-plate-x); top: var(--r-lower-card-doors-plate-y); width: var(--r-lower-card-doors-plate-w); height: var(--r-lower-card-doors-plate-h); }
-    .r-lower-card-frameless-plate { position: absolute; left: var(--r-lower-card-frameless-plate-x); top: var(--r-lower-card-frameless-plate-y); width: var(--r-lower-card-frameless-plate-w); height: var(--r-lower-card-frameless-plate-h); }
     @font-face {
       font-family: 'Yantramanav';
       font-style: normal;
@@ -94,136 +51,399 @@
     body {
       margin: 0;
       padding: 0;
-      background: #141c24;
+      background: #0d1317;
       color: #f1f5f9;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
 
-    /* Hero stage layout */
-    .hero-wrapper {
+    /* ==========================================================================
+       HERO SECTION (Full-bleed continuous background & glassmorphic cards)
+       ========================================================================== */
+    .hero-section {
+      position: relative;
       width: 100%;
-      background: #1a222d;
+      min-height: 100vh;
+      min-height: 720px;
+      background-color: #0d1317;
+      background-image: radial-gradient(ellipse 70% 60% at 50% 45%, rgba(20, 32, 42, 0.45) 0%, rgba(13, 19, 23, 0.9) 70%, #0d1317 100%);
       overflow: hidden;
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      position: relative;
+      flex-direction: column;
+      box-sizing: border-box;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
+    /* Crystal prism layers (seamless fade, no hard cuts) */
+    .hero-prism {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .hero-prism-left {
+      left: 0;
+      width: 44%;
+      max-width: 650px;
+      mix-blend-mode: lighten;
+      -webkit-mask-image: radial-gradient(ellipse 90% 85% at 15% 40%, black 40%, rgba(0, 0, 0, 0.6) 70%, transparent 95%);
+      mask-image: radial-gradient(ellipse 90% 85% at 15% 40%, black 40%, rgba(0, 0, 0, 0.6) 70%, transparent 95%);
+    }
+
+    .hero-prism-right {
+      right: 0;
+      width: 44%;
+      max-width: 650px;
+      mix-blend-mode: lighten;
+      -webkit-mask-image: radial-gradient(ellipse 90% 85% at 85% 40%, black 40%, rgba(0, 0, 0, 0.6) 70%, transparent 95%);
+      mask-image: radial-gradient(ellipse 90% 85% at 85% 40%, black 40%, rgba(0, 0, 0, 0.6) 70%, transparent 95%);
+    }
+
+    .hero-prism-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-prism-left .hero-prism-img {
+      object-position: left center;
+    }
+
+    .hero-prism-right .hero-prism-img {
+      object-position: right center;
+    }
+
+    /* Hero main content wrapper */
     .hero-container {
       position: relative;
-      width: 1376px;
-      height: 768px;
+      z-index: 5;
+      width: 100%;
+      max-width: 1240px;
       margin: 0 auto;
-      background: radial-gradient(ellipse 900px 320px at 50% 60%, rgba(100, 145, 170, 0.14) 0%, rgba(35, 55, 68, 0.08) 50%, transparent 80%), #1a222d;
-      overflow: hidden;
-      flex-shrink: 0;
+      padding: 0 24px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
     }
 
-    @media (min-width: 1377px) {
-      .hero-wrapper {
-        height: calc(100vw * 768 / 1376);
-        max-height: 804px;
+    /* Navbar */
+    .hero-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 0 12px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .hero-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .hero-brand-text {
+      font-family: 'Yantramanav', sans-serif;
+      font-weight: 700;
+      font-size: 21px;
+      color: #ffffff;
+      white-space: nowrap;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .hero-nav-links a {
+      color: #ccd0db;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .hero-nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .hero-nav-cta {
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-nav-wa {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      height: 38px;
+      padding: 0 20px;
+      background: #3db969;
+      border-radius: 9999px;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-nav-wa:hover {
+      background: #34a85c;
+      transform: translateY(-1px);
+    }
+
+    /* Badges */
+    .hero-badges {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      height: 26px;
+      padding: 0 14px;
+      border-radius: 9999px;
+      font-family: 'Yantramanav', sans-serif;
+      font-size: 12.5px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-sizing: border-box;
+      white-space: nowrap;
+    }
+
+    .badge-alvear {
+      background: linear-gradient(180deg, rgba(38, 57, 74, 0.7) 0%, rgba(30, 44, 56, 0.7) 100%);
+      border: 1px solid rgba(82, 107, 129, 0.55);
+      color: #a0b8cc;
+    }
+
+    .badge-medida {
+      background: linear-gradient(180deg, rgba(70, 64, 52, 0.7) 0%, rgba(56, 50, 38, 0.7) 100%);
+      border: 1px solid rgba(122, 113, 99, 0.55);
+      color: #ede4d8;
+    }
+
+    /* Headline & Subtitle */
+    .hero-headline {
+      font-family: 'Yantramanav', sans-serif;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: #ffffff;
+      margin: 22px 0 14px 0;
+      padding: 0 12px;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-accent {
+      color: #8ec5fc;
+      background: linear-gradient(135deg, #ffffff 10%, #8ec5fc 60%, #7dd3fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .hero-subhead {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 16px;
+      line-height: 1.6;
+      letter-spacing: 0.12em;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.85);
+      margin: 0 auto 38px auto;
+      max-width: 620px;
+      padding: 0 12px;
+      text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Cards Grid & Glassmorphism Cards */
+    .hero-cards-section {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto 52px auto;
+      padding: 0 12px;
+      box-sizing: border-box;
+    }
+
+    .hero-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      width: 100%;
+    }
+
+    .hero-glass-card {
+      background: rgba(30, 41, 50, 0.55);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 12px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .hero-glass-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(142, 197, 252, 0.4);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+    }
+
+    .hero-card-img-wrap {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #141c22;
+    }
+
+    .hero-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .hero-glass-card:hover .hero-card-img {
+      transform: scale(1.03);
+    }
+
+    .hero-card-title {
+      margin: 12px 2px 2px 2px;
+      font-family: 'Yantramanav', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: #e2e8f0;
+      line-height: 1.25;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 990px) {
+      .hero-nav-links {
+        display: none;
+      }
+      .hero-headline {
+        font-size: 46px;
+      }
+      .hero-subhead {
+        font-size: 14.5px;
+        letter-spacing: 0.08em;
+      }
+      .hero-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .hero-glass-card:last-child {
+        grid-column: span 2;
+        max-width: 480px;
+        margin: 0 auto;
+        width: 100%;
+      }
+      .hero-prism-left, .hero-prism-right {
+        width: 50%;
+        opacity: 0.65;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-section {
+        min-height: auto;
+        padding-bottom: 24px;
       }
       .hero-container {
-        transform-origin: top center;
-        transform: scale(calc(100vw / 1376));
+        padding: 0 16px;
       }
-    }
-
-    .region {
-      box-sizing: border-box;
-    }
-
-    /* Card background frames */
-    .card-backdrop-1, .card-backdrop-2, .card-backdrop-3 {
-      position: absolute;
-      top: 50%;
-      height: 308px;
-      background: linear-gradient(180deg, #444f57 0%, #364048 100%);
-      border: 1.5px solid rgba(255, 255, 255, 0.22);
-      border-radius: 14px;
-      z-index: 2;
-      box-sizing: border-box;
-    }
-    .card-backdrop-1 { left: 20%; width: 20%; }
-    .card-backdrop-2 { left: 40%; width: 20%; }
-    .card-backdrop-3 {
-      left: calc(60% + 24px);
-      width: 276px;
-    }
-
-    /* Mobile hero toggle */
-    .hero-mobile {
-      display: none;
-    }
-
-    @media (max-width: 900px) {
-      .hero-desktop {
-        display: none !important;
+      .hero-navbar {
+        padding: 16px 0 8px 0;
       }
-      .hero-mobile {
-        display: block !important;
-        background: radial-gradient(circle at 50% 10%, rgba(100, 145, 170, 0.16) 0%, transparent 70%), #1a222d;
-        padding: 24px 20px 40px 20px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      .hero-brand-text {
+        font-size: 17px;
       }
-      .hero-mobile-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 24px;
-      }
-      .hero-mobile-badges {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 16px;
-      }
-      .hero-mobile-title {
-        font-family: 'Yantramanav', sans-serif;
-        font-size: 38px;
-        font-weight: 700;
-        line-height: 1.1;
-        margin: 0 0 12px 0;
-        color: #ffffff;
-      }
-      .hero-mobile-sub {
-        font-size: 16px;
-        line-height: 1.5;
-        color: #c5d0d8;
-        margin: 0 0 24px 0;
-      }
-      .hero-mobile-ctas {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin-bottom: 32px;
-      }
-      .hero-mobile-plates {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-      }
-      .hero-mobile-plate-item {
-        background: #1c2730;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 12px;
-        overflow: hidden;
-      }
-      .hero-mobile-plate-item img {
-        width: 100%;
-        height: 120px;
-        object-fit: cover;
-        display: block;
-      }
-      .hero-mobile-plate-item p {
-        margin: 8px 10px;
+      .btn-nav-wa {
+        height: 34px;
+        padding: 0 14px;
         font-size: 13px;
-        font-weight: 500;
-        color: #e2e8f0;
+        gap: 5px;
+      }
+      @media (max-width: 480px) {
+        .btn-nav-wa span {
+          display: none;
+        }
+        .btn-nav-wa {
+          width: 36px;
+          height: 36px;
+          padding: 0;
+          border-radius: 50%;
+        }
+      }
+      .hero-badges {
+        margin-top: 24px;
+        gap: 8px;
+      }
+      .hero-badge {
+        font-size: 11.5px;
+        padding: 0 10px;
+        height: 24px;
+      }
+      .hero-headline {
+        font-size: 32px;
+        line-height: 1.15;
+        margin: 16px 0 10px 0;
+        padding: 0 4px;
+      }
+      .hero-subhead {
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        margin-bottom: 28px;
+        padding: 0 4px;
+      }
+      .hero-cards-section {
+        margin-bottom: 32px;
+        padding: 0 4px;
+      }
+      .hero-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .hero-glass-card:last-child {
+        grid-column: span 1;
+        max-width: none;
+      }
+      .hero-prism-left {
+        width: 70%;
+        opacity: 0.35;
+      }
+      .hero-prism-right {
+        width: 70%;
+        opacity: 0.35;
       }
     }
 
@@ -649,54 +869,57 @@
     }
   </script>
 
-  <!-- Desktop Hero Stage (Calibrated to comp challenger-cityscape.png) -->
-  <div class="hero-wrapper">
-    <header class="hero-container hero-desktop">
+  <!-- Hero Section (Full-bleed continuous background & glassmorphic cards) -->
+  <section class="hero-section" id="hero">
+    <!-- Left and right seamless crystal prism layers -->
+    <div class="hero-prism hero-prism-left" aria-hidden="true">
+      <img src="assets/plates/left-glass-prism.png" alt="" class="hero-prism-img">
+    </div>
+    <div class="hero-prism hero-prism-right" aria-hidden="true">
+      <img src="assets/plates/right-glass-prism.png" alt="" class="hero-prism-img">
+    </div>
 
-      <!-- Card Backgrounds -->
-      <div class="card-backdrop-1"></div>
-      <div class="card-backdrop-2"></div>
-      <div class="card-backdrop-3"></div>
-
-      <!-- Masthead Brand (0 to 40%, 0 to 10%) -->
-      <div class="r-masthead-brand region chrome" data-region="masthead-brand" style="z-index:10;display:flex;align-items:center;padding-left:245px;gap:12px;">
-        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:28px;height:28px;flex-shrink:0;">
-          <path d="M4 6L11 3V21L4 24V6Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.08)"/>
-          <path d="M11 3L17 7V25L11 21V3Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.18)"/>
-          <path d="M17 7L24 4V22L17 25V7Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.12)"/>
-          <path d="M11 3V21M17 7V25" stroke="#ffffff" stroke-width="1.5"/>
-        </svg>
-        <span style="font-family:'Yantramanav',sans-serif;font-weight:700;font-size:21px;color:#ffffff;white-space:nowrap;">Vidrios, espejos y más</span>
-      </div>
-
-      <!-- Nav Links (40% to 70%, 0 to 10%) -->
-      <div class="r-nav-links region control" data-region="nav-links" style="z-index:10;display:flex;align-items:center;justify-content:flex-end;gap:36px;padding-right:2px;font-family:'Yantramanav',sans-serif;">
-        <a href="#servicios" style="color:#ccd0db;text-decoration:none;font-size:15px;font-weight:500;">Servicios</a>
-        <a href="#materiales" style="color:#ccd0db;text-decoration:none;font-size:15px;font-weight:500;">Materiales</a>
-        <a href="#proceso" style="color:#ccd0db;text-decoration:none;font-size:15px;font-weight:500;">Proceso</a>
-        <a href="#taller" style="color:#ccd0db;text-decoration:none;font-size:15px;font-weight:500;">Contacto</a>
-      </div>
-
-      <!-- Nav CTA (72.17% to 82.64%, 0.78% to 7.81%) -->
-      <div class="r-nav-cta region control" data-region="nav-cta" style="z-index:10;display:flex;align-items:center;justify-content:center;">
-        <a href="https://wa.me/5492625123456" style="display:flex;align-items:center;justify-content:center;gap:7px;width:122px;height:38px;background:#3db969;border-radius:9999px;text-decoration:none;color:#ffffff;font-size:14px;font-weight:500;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
-            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+    <!-- Main Hero Container -->
+    <div class="hero-container">
+      <!-- Navbar (Brand, Links, WhatsApp button) -->
+      <header class="hero-navbar">
+        <a href="#hero" class="hero-brand" aria-label="Vidrios, espejos y más - Inicio">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:28px;height:28px;flex-shrink:0;">
+            <path d="M4 6L11 3V21L4 24V6Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.08)"/>
+            <path d="M11 3L17 7V25L11 21V3Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.18)"/>
+            <path d="M17 7L24 4V22L17 25V7Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.12)"/>
+            <path d="M11 3V21M17 7V25" stroke="#ffffff" stroke-width="1.5"/>
           </svg>
-          <span>WhatsApp</span>
+          <span class="hero-brand-text">Vidrios, espejos y más</span>
         </a>
-      </div>
 
-      <!-- Badges Strip (38.3% to 62.28%, 16.28% to 20.06%) -->
-      <div class="r-badges-strip region control" data-region="badges-strip" style="z-index:8;display:flex;align-items:flex-start;justify-content:flex-start;gap:11px;padding-left:4px;padding-top:7px;box-sizing:border-box;">
-        <span style="display:inline-flex;align-items:center;gap:6px;width:123px;height:22px;padding-left:2px;border-radius:9999px;background:linear-gradient(180deg, #26394a 0%, #1e2c38 100%);border:1.5px solid #526b81;font-family:'Yantramanav',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1px;color:#a0b8cc;box-sizing:border-box;white-space:nowrap;line-height:19px;">
+        <nav class="hero-nav-links" aria-label="Navegación principal">
+          <a href="#servicios">Servicios</a>
+          <a href="#materiales">Materiales</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#taller">Contacto</a>
+        </nav>
+
+        <div class="hero-nav-cta">
+          <a href="https://wa.me/5492625123456?text=Hola,%20quisiera%20consultar%20por%20un%20trabajo%20a%20medida%20en%20vidrios/espejos" class="btn-nav-wa" aria-label="WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- Pill Badges -->
+      <div class="hero-badges">
+        <span class="hero-badge badge-alvear">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7fa1ba" stroke-width="2" style="flex-shrink:0;">
             <path d="M12 21C16 17 20 13.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 13.4183 8 17 12 21Z"/>
             <circle cx="12" cy="10" r="3"/>
           </svg>
           <span>General Alvear</span>
         </span>
-        <span style="display:inline-flex;align-items:center;gap:6px;width:183px;height:22px;padding-left:10px;border-radius:9999px;background:linear-gradient(180deg, #464034 0%, #383226 100%);border:1.5px solid #7a7163;font-family:'Yantramanav',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1px;color:#ede4d8;box-sizing:border-box;white-space:nowrap;line-height:19px;">
+        <span class="hero-badge badge-medida">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#caa87f" stroke-width="2" style="flex-shrink:0;">
             <line x1="5" y1="19" x2="19" y2="5"/>
             <line x1="8" y1="13" x2="11" y2="16"/>
@@ -707,136 +930,43 @@
         </span>
       </div>
 
-      <!-- Hero Headline (20% to 80%, 20% to 40%) -->
-      <div class="r-hero-headline region text" data-region="hero-headline" style="z-index:8;display:flex;align-items:flex-start;justify-content:center;padding-top:32px;box-sizing:border-box;">
-        <h1 style="font-size:66px;font-family:'Yantramanav',sans-serif;font-weight:700;line-height:1.0;letter-spacing:-0.5px;margin:0;padding:0;text-align:center;color:#ffffff;">Vidrios, espejos y más</h1>
-      </div>
+      <!-- Main Headline -->
+      <h1 class="hero-headline">
+        Vidrios, espejos y <span class="hero-accent">más</span>
+      </h1>
 
-      <!-- Hero Subtitle (20% to 80%, 30% to 50%) -->
-      <div class="r-hero-sub region text" data-region="hero-sub" style="z-index:8;display:flex;align-items:flex-start;justify-content:center;padding-top:38px;box-sizing:border-box;">
-        <p style="font-size:20px;line-height:1.2;margin:0;padding:0;text-align:center;color:#c5d0d8;">La claridad del oficio y el brillo del diseño a medida</p>
-      </div>
+      <!-- Subtitle -->
+      <p class="hero-subhead">
+        La claridad de tus ideas,<br>en vidrio a medida
+      </p>
 
-      <!-- Hero CTA (41.28% to 58.72%, 41.54% to 49.35%) -->
-      <div class="r-hero-cta region control" data-region="hero-cta" style="z-index:10;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;box-sizing:border-box;">
-        <a href="https://wa.me/5492625123456" style="display:flex;align-items:center;justify-content:center;width:224px;height:44px;background:#3bb868;border-radius:9999px;text-decoration:none;color:#ffffff;font-size:15px;font-weight:500;font-family:'Yantramanav',sans-serif;">Consulta da WhatsApp</a>
-      </div>
+      <!-- 3 Glassmorphism Cards (Clean, single image, no duplicate backgrounds) -->
+      <div class="hero-cards-section">
+        <div class="hero-cards-grid">
+          <article class="hero-glass-card">
+            <div class="hero-card-img-wrap">
+              <img src="assets/plates/hero-card-mirror.png" alt="Bespoke full-length LED back..." class="hero-card-img" loading="eager">
+            </div>
+            <p class="hero-card-title">Bespoke full-length LED back...</p>
+          </article>
 
-      <!-- Left Prism Plate (0 to 20%, 10% to 60%) -->
-      <figure class="r-left-glass-prism region plate" data-region="left-glass-prism" style="margin:0;padding:0;z-index:1;">
-        <img src="assets/plates/left-glass-prism.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top left;opacity:0.9;display:block;">
-      </figure>
+          <article class="hero-glass-card">
+            <div class="hero-card-img-wrap">
+              <img src="assets/plates/hero-card-partition.png" alt="Architectural glass partitions" class="hero-card-img" loading="eager">
+            </div>
+            <p class="hero-card-title">Architectural glass partitions</p>
+          </article>
 
-      <!-- Right Prism Plate (80% to 100%, 0 to 60%) -->
-      <figure class="r-right-glass-prism region plate" data-region="right-glass-prism" style="margin:0;padding:0;z-index:1;">
-        <img src="assets/plates/right-glass-prism.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top right;opacity:0.9;display:block;">
-      </figure>
-
-      <!-- Card 1 Mirror (20% to 40%, 50% to 80%) -->
-      <figure class="r-card-mirror-plate region plate" data-region="card-mirror-plate" style="margin:0;padding:12px 12px 0 12px;box-sizing:border-box;z-index:3;">
-        <img src="assets/plates/card-mirror-plate.png" alt="" style="width:100%;height:calc(100% + 16px);object-fit:cover;border-radius:12px 12px 0 0;display:block;">
-      </figure>
-      <!-- Card 1 Caption (19.99% to 38.74%, 79.95% to 89.98%) -->
-      <div class="r-card-mirror-caption region text" data-region="card-mirror-caption" style="z-index:4;padding:34px 8px 0 8px;box-sizing:border-box;">
-        <p style="font-size:16px;line-height:1.2;margin:0;padding:0;color:#dde3ea;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Bespoke full-length LED back...</p>
-      </div>
-
-      <!-- Card 2 Partition (40% to 60%, 50% to 80%) -->
-      <figure class="r-card-partition-plate region plate" data-region="card-partition-plate" style="margin:0;padding:12px 12px 0 12px;box-sizing:border-box;z-index:3;">
-        <img src="assets/plates/card-partition-plate.png" alt="" style="width:100%;height:calc(100% + 16px);object-fit:cover;border-radius:12px 12px 0 0;display:block;">
-      </figure>
-      <!-- Card 2 Caption (40% to 60%, 80% to 90%) -->
-      <div class="r-card-partition-caption region text" data-region="card-partition-caption" style="z-index:4;padding:34px 14px 0 14px;box-sizing:border-box;">
-        <p style="font-size:15.5px;line-height:1.2;margin:0;padding:0;color:#a8978d;font-weight:500;white-space:nowrap;">Architectural glass partitions</p>
-      </div>
-
-      <!-- Card 3 Storefront (60% to 90%, 50% to 80%) -->
-      <figure class="r-card-storefront-plate region plate" data-region="card-storefront-plate" style="margin:0;padding:0;z-index:3;">
-        <img src="assets/plates/card-storefront-plate.png" alt="" style="position:absolute;left:24px;top:12px;width:276px;height:234px;object-fit:cover;border-radius:12px 12px 0 0;display:block;">
-      </figure>
-      <!-- Card 3 Caption (61.34% to 82.27%, 79.95% to 89.98%) -->
-      <div class="r-card-storefront-caption region text" data-region="card-storefront-caption" style="z-index:4;padding:34px 14px 0 14px;box-sizing:border-box;">
-        <p style="font-size:16px;line-height:1.2;margin:0;padding:0;color:#ffffff;font-weight:500;">Modern storefront glass</p>
-      </div>
-
-      <!-- Lower Row Plates (90% to 100%) -->
-      <figure class="r-lower-card-shower-plate region plate" data-region="lower-card-shower-plate" style="margin:0;padding:8px 12px 0 12px;box-sizing:border-box;z-index:3;">
-        <img src="assets/plates/lower-card-shower-plate.png" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:12px 12px 0 0;display:block;">
-      </figure>
-      <figure class="r-lower-card-doors-plate region plate" data-region="lower-card-doors-plate" style="margin:0;padding:8px 12px 0 12px;box-sizing:border-box;z-index:3;">
-        <img src="assets/plates/lower-card-doors-plate.png" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:12px 12px 0 0;display:block;">
-      </figure>
-      <figure class="r-lower-card-frameless-plate region plate" data-region="lower-card-frameless-plate" style="margin:0;padding:0;z-index:3;overflow:hidden;">
-        <img src="assets/plates/lower-card-frameless-plate.png" alt="" style="position:absolute;left:0;top:-12px;width:100%;height:calc(100% + 24px);object-fit:cover;object-position:top center;display:block;">
-      </figure>
-
-    </header>
-  </div>
-
-  <!-- Mobile Hero (for screens < 900px) -->
-  <header class="hero-mobile">
-    <div class="hero-mobile-header">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <svg viewBox="0 0 28 28" fill="none" style="width:26px;height:26px;">
-          <path d="M4 6L11 3V21L4 24V6Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.08)"/>
-          <path d="M11 3L17 7V25L11 21V3Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.18)"/>
-          <path d="M17 7L24 4V22L17 25V7Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.12)"/>
-        </svg>
-        <span style="font-family:'Yantramanav',sans-serif;font-weight:700;font-size:19px;color:#ffffff;">Vidrios, espejos y más</span>
-      </div>
-      <a href="tel:+5492625123456" style="display:flex;align-items:center;gap:6px;color:#a0b8cc;font-size:13px;text-decoration:none;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-        </svg>
-        <span>Llamar</span>
-      </a>
-    </div>
-
-    <div class="hero-mobile-badges">
-      <span style="display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:9999px;background:#213353;border:1px solid #526b81;font-size:12px;color:#cbd5e1;">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#7fa1ba" stroke-width="2"><path d="M12 21C16 17 20 13.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 13.4183 8 17 12 21Z"/><circle cx="12" cy="10" r="3"/></svg>
-        General Alvear, Mendoza
-      </span>
-      <span style="display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:9999px;background:#453b32;border:1px solid #7a7163;font-size:12px;color:#ede4d8;">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#caa87f" stroke-width="2"><line x1="5" y1="19" x2="19" y2="5"/><circle cx="19" cy="5" r="1.5" fill="#caa87f"/></svg>
-        Fabricación a medida
-      </span>
-    </div>
-
-    <h1 class="hero-mobile-title">Vidrios, espejos y más</h1>
-    <p class="hero-mobile-sub">La claridad del oficio y el brillo del diseño a medida en General Alvear. Trabajos personalizados para hogares, comercios y obras.</p>
-
-    <div class="hero-mobile-ctas">
-      <a href="https://wa.me/5492625123456?text=Hola,%20quisiera%20pedir%20presupuesto%20por%20un%20trabajo%20en%20vidrios/espejos" class="btn-wa-primary">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff">
-          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
-        </svg>
-        <span>Cotizar por WhatsApp</span>
-      </a>
-      <a href="tel:+5492625123456" class="btn-secondary">
-        Llamar al taller (2625 12-3456)
-      </a>
-    </div>
-
-    <div class="hero-mobile-plates">
-      <div class="hero-mobile-plate-item">
-        <img src="assets/plates/card-mirror-plate.png" alt="Espejo LED">
-        <p>Espejos LED a medida</p>
-      </div>
-      <div class="hero-mobile-plate-item">
-        <img src="assets/plates/card-partition-plate.png" alt="Mamparas">
-        <p>Mamparas templadas</p>
-      </div>
-      <div class="hero-mobile-plate-item">
-        <img src="assets/plates/card-storefront-plate.png" alt="Vidrieras">
-        <p>Vidrieras comerciales</p>
-      </div>
-      <div class="hero-mobile-plate-item">
-        <img src="assets/plates/lower-card-doors-plate.png" alt="Cerramientos">
-        <p>Puertas y cerramientos</p>
+          <article class="hero-glass-card">
+            <div class="hero-card-img-wrap">
+              <img src="assets/plates/hero-card-storefront.png" alt="Modern storefront glass" class="hero-card-img" loading="eager">
+            </div>
+            <p class="hero-card-title">Modern storefront glass</p>
+          </article>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
   <main>
     <!-- Section: Servicios -->
