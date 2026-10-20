@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": "espejos",
+      "title": "Espejos",
+      "tagline": "Diseños exclusivos y a medida",
+      "description": "Espejos rectangulares, redondos, nube, con LED y panorámicos, listos para colgar. Fabricados en cristal float de alta nitidez con protección antihumedad y terminaciones de taller.",
+      "image": "assets/images/espejo-redondo-led.jpg",
+      "alt": "Espejos redondos, nube y con iluminación LED en General Alvear",
+      "features": [
+        "Modelos redondos, rectangulares y forma nube",
+        "Con iluminación LED perimetral o bordes biselados",
+        "Panorámicos y de cuerpo entero, listos para colgar"
+      ],
+      "btn_text": "Consultar modelos por WhatsApp",
+      "wa_message": "Hola, quisiera consultar por modelos de espejos (redondo, nube, con LED o rectangular)"
+    },
+    {
+      "id": "muebles-de-vidrio",
+      "title": "Muebles de Vidrio",
+      "tagline": "Living, hogares y comercios",
+      "description": "Mesas ratoneras de cristal y vitrinas de vidrio para living y comercios. Cristales cortados a medida con bordes pulidos al hilo brillante y templado de seguridad.",
+      "image": "assets/images/mesa-cristal.jpg",
+      "alt": "Mesas ratoneras de cristal y vitrinas de vidrio",
+      "features": [
+        "Mesas ratoneras y tapas de cristal a medida",
+        "Vitrinas exhibidoras para locales comerciales",
+        "Bordes pulidos al hilo brillante y esquinas seguras"
+      ],
+      "btn_text": "Cotizar muebles de vidrio",
+      "wa_message": "Hola, quisiera cotizar una mesa ratonera de cristal o vitrina de vidrio"
+    },
+    {
+      "id": "instalaciones-y-aberturas",
+      "title": "Instalaciones y Aberturas",
+      "tagline": "Colocación profesional en tu espacio",
+      "description": "Aberturas de aluminio y mamparas para baño con colocación incluida. Asesoramiento en obra, toma de medidas exactas y colocación prolija en General Alvear.",
+      "image": "assets/images/mampara-bano.jpg",
+      "alt": "Aberturas de aluminio y mamparas de baño con colocación",
+      "features": [
+        "Mamparas de cristal templado para baño",
+        "Aberturas y cerramientos de aluminio",
+        "Colocación e instalación en obra incluida"
+      ],
+      "btn_text": "Presupuestar con colocación",
+      "wa_message": "Hola, quisiera presupuestar aberturas de aluminio o mampara para baño con colocación"
+    },
+    {
+      "id": "servicios-y-reparaciones",
+      "title": "Servicios y Reparaciones",
+      "tagline": "Atención rápida y oficio artesanal",
+      "description": "Reparación de vidrios y espejos de vehículos (autos, utilitarios, camionetas), reposición urgente de roturas y enmarcación artesanal de logros y recuerdos.",
+      "image": "assets/images/enmarcacion-logros-recuerdos.jpg",
+      "alt": "Reparación de vidrios y espejos de vehículos y enmarcaciones",
+      "features": [
+        "Espejos retrovisores para vehículos y camionetas (Trafic, utilitarios)",
+        "Reposición rápida de vidrios rotos en ventanas y aberturas",
+        "Enmarcación de diplomas, títulos, obras y recuerdos"
+      ],
+      "btn_text": "Solicitar reparación o enmarcado",
+      "wa_message": "Hola, necesito consultar por reparación de vidrios/espejos de vehículo o enmarcación"
+    }
+  ]
+}

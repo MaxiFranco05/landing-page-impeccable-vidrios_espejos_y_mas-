@@ -1,0 +1,22 @@
+{
+  "cards": [
+    {
+      "title": "Espejos (LED, Nube y Panorámicos)",
+      "image": "assets/images/espejo-redondo-led.jpg",
+      "alt": "Espejos con iluminación LED y modelos artesanales",
+      "link": "#servicios"
+    },
+    {
+      "title": "Aberturas y Mamparas con Colocación",
+      "image": "assets/images/mampara-bano.jpg",
+      "alt": "Mamparas de cristal templado y aberturas",
+      "link": "#servicios"
+    },
+    {
+      "title": "Mesas Ratoneras y Vitrinas",
+      "image": "assets/images/mesa-cristal.jpg",
+      "alt": "Muebles de vidrio, mesas y vitrinas comerciales",
+      "link": "#servicios"
+    }
+  ]
+}

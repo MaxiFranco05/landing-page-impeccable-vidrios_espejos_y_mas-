@@ -1,0 +1,98 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Carpeta donde se suben imágenes desde el panel
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+# Idioma de la interfaz
+locale: "es"
+
+collections:
+  - name: "taller_info"
+    label: "Datos del Local"
+    description: "Dirección, teléfono, WhatsApp, horarios y Google Maps"
+    files:
+      - file: "data/taller.json"
+        label: "Información de Contacto"
+        name: "taller_data"
+        format: "json"
+        fields:
+          - { label: "Nombre Comercial", name: "nombre", widget: "string" }
+          - { label: "Rubro", name: "rubro", widget: "string" }
+          - { label: "Dirección", name: "direccion", widget: "string" }
+          - { label: "Código Plus / Ubicación Exacta", name: "codigo_plus", widget: "string" }
+          - { label: "Localidad", name: "localidad", widget: "string" }
+          - { label: "Provincia", name: "provincia", widget: "string" }
+          - { label: "Zona de Atención", name: "zona_atencion", widget: "string" }
+          - { label: "Teléfono Visible (ej: 2625 44-5223)", name: "telefono_visible", widget: "string" }
+          - { label: "WhatsApp Internacional (ej: 5492625445223)", name: "whatsapp_internacional", widget: "string" }
+          - { label: "Horarios (Texto Resumen)", name: "horarios_texto", widget: "string" }
+          - { label: "Enlace de Google Maps", name: "maps_url", widget: "string" }
+          - { label: "URL de Iframe de Google Maps", name: "maps_embed", widget: "string" }
+
+  - name: "categorias_seccion"
+    label: "Categorías y Trabajos"
+    description: "Editar las 4 categorías principales del taller"
+    files:
+      - file: "data/services.json"
+        label: "Listado de Categorías"
+        name: "services_data"
+        format: "json"
+        fields:
+          - label: "Categorías"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Identificador (ID)", name: "id", widget: "string" }
+              - { label: "Título de la Categoría", name: "title", widget: "string" }
+              - { label: "Subtítulo / Bajada", name: "tagline", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+              - { label: "Imagen Representativa", name: "image", widget: "image" }
+              - { label: "Texto alternativo de imagen (SEO)", name: "alt", widget: "string" }
+              - label: "Puntos clave / Modelos incluidos"
+                name: "features"
+                widget: "list"
+                field: { label: "Característica", name: "item", widget: "string" }
+              - { label: "Texto del Botón de WhatsApp", name: "btn_text", widget: "string" }
+              - { label: "Mensaje inicial de WhatsApp", name: "wa_message", widget: "string" }
+
+  - name: "testimonios_seccion"
+    label: "Testimonios y Reseñas"
+    description: "Opiniones reales de clientes (Google Maps)"
+    files:
+      - file: "data/testimonios.json"
+        label: "Reseñas de Clientes"
+        name: "testimonios_data"
+        format: "json"
+        fields:
+          - label: "Listado de Testimonios"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.nombre}} ({{fields.calificacion}}★)"
+            fields:
+              - { label: "Nombre del Cliente", name: "nombre", widget: "string" }
+              - { label: "Calificación (1 a 5)", name: "calificacion", widget: "number", value_type: "int", min: 1, max: 5 }
+              - { label: "Fuente", name: "fuente", widget: "string", default: "Google Maps" }
+              - { label: "Comentario", name: "comentario", widget: "text" }
+
+  - name: "hero_seccion"
+    label: "Hero / Destacados"
+    description: "Editar las tarjetas visuales destacadas del encabezado"
+    files:
+      - file: "data/hero.json"
+        label: "Tarjetas del Hero"
+        name: "hero_data"
+        format: "json"
+        fields:
+          - label: "Tarjetas Superiores"
+            name: "cards"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Título de la Tarjeta", name: "title", widget: "string" }
+              - { label: "Imagen", name: "image", widget: "image" }
+              - { label: "Texto alternativo (SEO)", name: "alt", widget: "string" }
+              - { label: "Enlace o Sección de destino", name: "link", widget: "string" }

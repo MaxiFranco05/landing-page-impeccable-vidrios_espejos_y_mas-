@@ -1,0 +1,51 @@
+{
+  "resumen": {
+    "promedio": 5.0,
+    "total": 7,
+    "fuente": "Google Maps"
+  },
+  "items": [
+    {
+      "nombre": "Noelia Berdus",
+      "calificacion": 5,
+      "fuente": "Google Maps",
+      "comentario": "Estos espejos superaron mis expectativas. Reflejan la luz de una manera hermosa y le dan un toque especial a cualquier espacio."
+    },
+    {
+      "nombre": "Irma Torres",
+      "calificacion": 5,
+      "fuente": "Google Maps",
+      "comentario": "Hermosos espejos me compré uno quedó precioso. Gracias por la atención y un muy buen precio."
+    },
+    {
+      "nombre": "Pedro Verdugo",
+      "calificacion": 5,
+      "fuente": "Google Maps",
+      "comentario": "Muy buen trabajo lo recomiendo yo les coloque a mi Trafic."
+    },
+    {
+      "nombre": "Lorena Berdus",
+      "calificacion": 5,
+      "fuente": "Google Maps",
+      "comentario": "Muy bellos espejos. Hay que llamar o enviar un mensaje para coordinar una visita."
+    },
+    {
+      "nombre": "Victor Hugo Franco",
+      "calificacion": 5,
+      "fuente": "Google Maps",
+      "comentario": "Excelente atención y precios súper económicos."
+    },
+    {
+      "nombre": "Adrián Pavez",
+      "calificacion": 5,
+      "fuente": "Google Maps",
+      "comentario": "Muy buenos diseños y atención!!!"
+    },
+    {
+      "nombre": "Andrea Berdus",
+      "calificacion": 5,
+      "fuente": "Google Maps",
+      "comentario": "Hermosos diseños y atención!"
+    }
+  ]
+}
