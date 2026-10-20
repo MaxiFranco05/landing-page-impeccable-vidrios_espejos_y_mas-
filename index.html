@@ -1,0 +1,1193 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vidrios, espejos y más | Taller Artesanal en General Alvear, Mendoza</title>
+  <link rel="stylesheet" href=".impeccable/build/scaffold/layout.css">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <style>
+    @font-face {
+      font-family: 'Yantramanav';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/Yantramanav-Bold.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Yantramanav';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/Yantramanav-Regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Yantramanav';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/Yantramanav-Regular.ttf') format('truetype');
+    }
+
+    ::selection {
+      background: #3a5067;
+      color: #ffffff;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #141c24;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2a3d4f;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3b546c;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #141c24;
+      color: #f1f5f9;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Hero stage layout */
+    .hero-wrapper {
+      width: 100%;
+      background: #1a222d;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .hero-container {
+      position: relative;
+      width: 1376px;
+      height: 768px;
+      margin: 0 auto;
+      background: radial-gradient(ellipse 900px 320px at 50% 60%, rgba(100, 145, 170, 0.14) 0%, rgba(35, 55, 68, 0.08) 50%, transparent 80%), #1a222d;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 1377px) {
+      .hero-wrapper {
+        height: calc(100vw * 768 / 1376);
+        max-height: 804px;
+      }
+      .hero-container {
+        transform-origin: top center;
+        transform: scale(calc(100vw / 1376));
+      }
+    }
+
+    .region {
+      box-sizing: border-box;
+    }
+
+    /* Card background frames */
+    .card-backdrop-1, .card-backdrop-2, .card-backdrop-3 {
+      position: absolute;
+      top: 50%;
+      height: 308px;
+      background: linear-gradient(180deg, #444f57 0%, #364048 100%);
+      border: 1.5px solid rgba(255, 255, 255, 0.22);
+      border-radius: 14px;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+    .card-backdrop-1 { left: 20%; width: 20%; }
+    .card-backdrop-2 { left: 40%; width: 20%; }
+    .card-backdrop-3 {
+      left: calc(60% + 24px);
+      width: 276px;
+    }
+
+    /* Mobile hero toggle */
+    .hero-mobile {
+      display: none;
+    }
+
+    @media (max-width: 900px) {
+      .hero-desktop {
+        display: none !important;
+      }
+      .hero-mobile {
+        display: block !important;
+        background: radial-gradient(circle at 50% 10%, rgba(100, 145, 170, 0.16) 0%, transparent 70%), #1a222d;
+        padding: 24px 20px 40px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .hero-mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+      }
+      .hero-mobile-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+      .hero-mobile-title {
+        font-family: 'Yantramanav', sans-serif;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 1.1;
+        margin: 0 0 12px 0;
+        color: #ffffff;
+      }
+      .hero-mobile-sub {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #c5d0d8;
+        margin: 0 0 24px 0;
+      }
+      .hero-mobile-ctas {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 32px;
+      }
+      .hero-mobile-plates {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .hero-mobile-plate-item {
+        background: #1c2730;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .hero-mobile-plate-item img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        display: block;
+      }
+      .hero-mobile-plate-item p {
+        margin: 8px 10px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #e2e8f0;
+      }
+    }
+
+    /* Common section styling */
+    .section-wrap {
+      width: 100%;
+      padding: 80px 24px;
+      box-sizing: border-box;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .section-wrap.alt-bg {
+      background: #17212b;
+    }
+
+    .section-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .section-head {
+      margin-bottom: 48px;
+      max-width: 760px;
+    }
+    .section-head h2 {
+      font-family: 'Yantramanav', sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0 0 14px 0;
+      color: #ffffff;
+    }
+    .section-head p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #94a3b8;
+      margin: 0;
+    }
+
+    /* Grid cards */
+    .cards-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .cards-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .cards-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .cards-grid-3 { grid-template-columns: repeat(2, 1fr); }
+      .cards-grid-4 { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 680px) {
+      .cards-grid-3, .cards-grid-2, .cards-grid-4 { grid-template-columns: 1fr; }
+      .section-wrap { padding: 56px 16px; }
+      .section-head h2 { font-size: 30px; }
+    }
+
+    .service-card {
+      background: #1a252f;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(100, 145, 170, 0.35);
+    }
+    .service-card-media {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      background: #121921;
+    }
+    .service-card-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .service-card:hover .service-card-media img {
+      transform: scale(1.03);
+    }
+    .service-card-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .service-card-title {
+      font-family: 'Yantramanav', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 10px 0;
+    }
+    .service-card-desc {
+      font-size: 15px;
+      line-height: 1.55;
+      color: #94a3b8;
+      margin: 0 0 20px 0;
+      flex-grow: 1;
+    }
+    .service-card-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .service-card-features li {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .service-card-features li svg {
+      width: 14px;
+      height: 14px;
+      stroke: #3db969;
+      flex-shrink: 0;
+    }
+
+    /* Buttons */
+    .btn-wa-card {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      height: 42px;
+      background: #233441;
+      border: 1px solid rgba(61, 185, 105, 0.4);
+      border-radius: 9999px;
+      color: #7de8a1;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      box-sizing: border-box;
+    }
+    .btn-wa-card:hover {
+      background: #3db969;
+      color: #ffffff;
+      border-color: #3db969;
+    }
+
+    .btn-wa-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      height: 48px;
+      padding: 0 26px;
+      background: #3bb868;
+      border-radius: 9999px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .btn-wa-primary:hover {
+      background: #34a85c;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      height: 48px;
+      padding: 0 24px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 9999px;
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Process steps */
+    .process-step {
+      background: #1a252f;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 28px 24px;
+      position: relative;
+    }
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      background: #213353;
+      border: 1px solid #526b81;
+      border-radius: 9999px;
+      color: #7fa1ba;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+    .step-title {
+      font-family: 'Yantramanav', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 10px 0;
+    }
+    .step-desc {
+      font-size: 14.5px;
+      line-height: 1.55;
+      color: #94a3b8;
+      margin: 0;
+    }
+
+    /* Materials specs */
+    .spec-item {
+      background: #18222a;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .spec-name {
+      font-family: 'Yantramanav', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin: 0 0 8px 0;
+    }
+    .spec-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      color: #caa87f;
+      background: rgba(202, 168, 127, 0.12);
+      border: 1px solid rgba(202, 168, 127, 0.3);
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    .spec-desc {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #94a3b8;
+      margin: 0;
+    }
+
+    /* Workshop & Contact */
+    .workshop-card {
+      background: linear-gradient(180deg, #1d2b36 0%, #152028 100%);
+      border: 1px solid rgba(100, 145, 170, 0.2);
+      border-radius: 16px;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    @media (max-width: 800px) {
+      .workshop-card { grid-template-columns: 1fr; padding: 24px; gap: 30px; }
+    }
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .info-icon {
+      width: 24px;
+      height: 24px;
+      stroke: #7fa1ba;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .info-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin: 0 0 4px 0;
+    }
+    .info-text {
+      font-size: 14.5px;
+      line-height: 1.5;
+      color: #94a3b8;
+      margin: 0;
+    }
+
+    /* FAQ accordion */
+    .faq-item {
+      background: #1a252f;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 14px;
+    }
+    .faq-q {
+      font-family: 'Yantramanav', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 8px 0;
+    }
+    .faq-a {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: #94a3b8;
+      margin: 0;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #0f151c;
+      padding: 48px 24px 32px 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .footer-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .footer-copy {
+      font-size: 13.5px;
+      color: #64748b;
+      margin: 0;
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+    .footer-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s ease;
+    }
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      background: #3bb868;
+      border-radius: 9999px;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 14.5px;
+      font-weight: 600;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 0 2px 6px rgba(59, 184, 104, 0.3);
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s ease;
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.05);
+      background: #34a85c;
+    }
+    .floating-whatsapp svg {
+      width: 22px;
+      height: 22px;
+      fill: #ffffff;
+      flex-shrink: 0;
+    }
+    @media (max-width: 600px) {
+      .floating-whatsapp span {
+        display: none;
+      }
+      .floating-whatsapp {
+        padding: 14px;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <span style="font-family:'Yantramanav',sans-serif;font-weight:400;opacity:0.01;position:absolute;pointer-events:none;">warmup</span>
+  <span style="font-family:'Yantramanav',sans-serif;font-weight:700;opacity:0.01;position:absolute;pointer-events:none;">warmup</span>
+  <script>
+    if (document.fonts) {
+      document.fonts.load('72px Yantramanav');
+      document.fonts.load('bold 72px Yantramanav');
+    }
+  </script>
+
+  <!-- Desktop Hero Stage (Calibrated to comp challenger-cityscape.png) -->
+  <div class="hero-wrapper">
+    <header class="hero-container hero-desktop">
+
+      <!-- Card Backgrounds -->
+      <div class="card-backdrop-1"></div>
+      <div class="card-backdrop-2"></div>
+      <div class="card-backdrop-3"></div>
+
+      <!-- Masthead Brand (0 to 40%, 0 to 10%) -->
+      <div class="r-masthead-brand region chrome" data-region="masthead-brand" style="z-index:10;display:flex;align-items:center;padding-left:245px;gap:12px;">
+        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:28px;height:28px;flex-shrink:0;">
+          <path d="M4 6L11 3V21L4 24V6Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.08)"/>
+          <path d="M11 3L17 7V25L11 21V3Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.18)"/>
+          <path d="M17 7L24 4V22L17 25V7Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.12)"/>
+          <path d="M11 3V21M17 7V25" stroke="#ffffff" stroke-width="1.5"/>
+        </svg>
+        <span style="font-family:'Yantramanav',sans-serif;font-weight:700;font-size:21px;color:#ffffff;white-space:nowrap;">Vidrios, espejos y más</span>
+      </div>
+
+      <!-- Nav Links (40% to 70%, 0 to 10%) -->
+      <div class="r-nav-links region control" data-region="nav-links" style="z-index:10;display:flex;align-items:center;justify-content:flex-end;gap:36px;padding-right:2px;font-family:'Yantramanav',sans-serif;">
+        <a href="#servicios" style="color:#ccd0db;text-decoration:none;font-size:15px;font-weight:500;">Servicios</a>
+        <a href="#materiales" style="color:#ccd0db;text-decoration:none;font-size:15px;font-weight:500;">Materiales</a>
+        <a href="#proceso" style="color:#ccd0db;text-decoration:none;font-size:15px;font-weight:500;">Proceso</a>
+        <a href="#taller" style="color:#ccd0db;text-decoration:none;font-size:15px;font-weight:500;">Contacto</a>
+      </div>
+
+      <!-- Nav CTA (72.17% to 82.64%, 0.78% to 7.81%) -->
+      <div class="r-nav-cta region control" data-region="nav-cta" style="z-index:10;display:flex;align-items:center;justify-content:center;">
+        <a href="https://wa.me/5492625123456" style="display:flex;align-items:center;justify-content:center;gap:7px;width:122px;height:38px;background:#3db969;border-radius:9999px;text-decoration:none;color:#ffffff;font-size:14px;font-weight:500;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Badges Strip (38.3% to 62.28%, 16.28% to 20.06%) -->
+      <div class="r-badges-strip region control" data-region="badges-strip" style="z-index:8;display:flex;align-items:flex-start;justify-content:flex-start;gap:11px;padding-left:4px;padding-top:7px;box-sizing:border-box;">
+        <span style="display:inline-flex;align-items:center;gap:6px;width:123px;height:22px;padding-left:2px;border-radius:9999px;background:linear-gradient(180deg, #26394a 0%, #1e2c38 100%);border:1.5px solid #526b81;font-family:'Yantramanav',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1px;color:#a0b8cc;box-sizing:border-box;white-space:nowrap;line-height:19px;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7fa1ba" stroke-width="2" style="flex-shrink:0;">
+            <path d="M12 21C16 17 20 13.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 13.4183 8 17 12 21Z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>General Alvear</span>
+        </span>
+        <span style="display:inline-flex;align-items:center;gap:6px;width:183px;height:22px;padding-left:10px;border-radius:9999px;background:linear-gradient(180deg, #464034 0%, #383226 100%);border:1.5px solid #7a7163;font-family:'Yantramanav',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1px;color:#ede4d8;box-sizing:border-box;white-space:nowrap;line-height:19px;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#caa87f" stroke-width="2" style="flex-shrink:0;">
+            <line x1="5" y1="19" x2="19" y2="5"/>
+            <line x1="8" y1="13" x2="11" y2="16"/>
+            <line x1="12" y1="9" x2="15" y2="12"/>
+            <circle cx="19" cy="5" r="1.5" fill="#caa87f"/>
+          </svg>
+          <span>Fabricación a medida</span>
+        </span>
+      </div>
+
+      <!-- Hero Headline (20% to 80%, 20% to 40%) -->
+      <div class="r-hero-headline region text" data-region="hero-headline" style="z-index:8;display:flex;align-items:flex-start;justify-content:center;padding-top:32px;box-sizing:border-box;">
+        <h1 style="font-size:66px;font-family:'Yantramanav',sans-serif;font-weight:700;line-height:1.0;letter-spacing:-0.5px;margin:0;padding:0;text-align:center;color:#ffffff;">Vidrios, espejos y más</h1>
+      </div>
+
+      <!-- Hero Subtitle (20% to 80%, 30% to 50%) -->
+      <div class="r-hero-sub region text" data-region="hero-sub" style="z-index:8;display:flex;align-items:flex-start;justify-content:center;padding-top:38px;box-sizing:border-box;">
+        <p style="font-size:20px;line-height:1.2;margin:0;padding:0;text-align:center;color:#c5d0d8;">La claridad del oficio y el brillo del diseño a medida</p>
+      </div>
+
+      <!-- Hero CTA (41.28% to 58.72%, 41.54% to 49.35%) -->
+      <div class="r-hero-cta region control" data-region="hero-cta" style="z-index:10;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;box-sizing:border-box;">
+        <a href="https://wa.me/5492625123456" style="display:flex;align-items:center;justify-content:center;width:224px;height:44px;background:#3bb868;border-radius:9999px;text-decoration:none;color:#ffffff;font-size:15px;font-weight:500;font-family:'Yantramanav',sans-serif;">Consulta da WhatsApp</a>
+      </div>
+
+      <!-- Left Prism Plate (0 to 20%, 10% to 60%) -->
+      <figure class="r-left-glass-prism region plate" data-region="left-glass-prism" style="margin:0;padding:0;z-index:1;">
+        <img src="assets/plates/left-glass-prism.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top left;opacity:0.9;display:block;">
+      </figure>
+
+      <!-- Right Prism Plate (80% to 100%, 0 to 60%) -->
+      <figure class="r-right-glass-prism region plate" data-region="right-glass-prism" style="margin:0;padding:0;z-index:1;">
+        <img src="assets/plates/right-glass-prism.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top right;opacity:0.9;display:block;">
+      </figure>
+
+      <!-- Card 1 Mirror (20% to 40%, 50% to 80%) -->
+      <figure class="r-card-mirror-plate region plate" data-region="card-mirror-plate" style="margin:0;padding:12px 12px 0 12px;box-sizing:border-box;z-index:3;">
+        <img src="assets/plates/card-mirror-plate.png" alt="" style="width:100%;height:calc(100% + 16px);object-fit:cover;border-radius:12px 12px 0 0;display:block;">
+      </figure>
+      <!-- Card 1 Caption (19.99% to 38.74%, 79.95% to 89.98%) -->
+      <div class="r-card-mirror-caption region text" data-region="card-mirror-caption" style="z-index:4;padding:34px 8px 0 8px;box-sizing:border-box;">
+        <p style="font-size:16px;line-height:1.2;margin:0;padding:0;color:#dde3ea;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Bespoke full-length LED back...</p>
+      </div>
+
+      <!-- Card 2 Partition (40% to 60%, 50% to 80%) -->
+      <figure class="r-card-partition-plate region plate" data-region="card-partition-plate" style="margin:0;padding:12px 12px 0 12px;box-sizing:border-box;z-index:3;">
+        <img src="assets/plates/card-partition-plate.png" alt="" style="width:100%;height:calc(100% + 16px);object-fit:cover;border-radius:12px 12px 0 0;display:block;">
+      </figure>
+      <!-- Card 2 Caption (40% to 60%, 80% to 90%) -->
+      <div class="r-card-partition-caption region text" data-region="card-partition-caption" style="z-index:4;padding:34px 14px 0 14px;box-sizing:border-box;">
+        <p style="font-size:15.5px;line-height:1.2;margin:0;padding:0;color:#a8978d;font-weight:500;white-space:nowrap;">Architectural glass partitions</p>
+      </div>
+
+      <!-- Card 3 Storefront (60% to 90%, 50% to 80%) -->
+      <figure class="r-card-storefront-plate region plate" data-region="card-storefront-plate" style="margin:0;padding:0;z-index:3;">
+        <img src="assets/plates/card-storefront-plate.png" alt="" style="position:absolute;left:24px;top:12px;width:276px;height:234px;object-fit:cover;border-radius:12px 12px 0 0;display:block;">
+      </figure>
+      <!-- Card 3 Caption (61.34% to 82.27%, 79.95% to 89.98%) -->
+      <div class="r-card-storefront-caption region text" data-region="card-storefront-caption" style="z-index:4;padding:34px 14px 0 14px;box-sizing:border-box;">
+        <p style="font-size:16px;line-height:1.2;margin:0;padding:0;color:#ffffff;font-weight:500;">Modern storefront glass</p>
+      </div>
+
+      <!-- Lower Row Plates (90% to 100%) -->
+      <figure class="r-lower-card-shower-plate region plate" data-region="lower-card-shower-plate" style="margin:0;padding:8px 12px 0 12px;box-sizing:border-box;z-index:3;">
+        <img src="assets/plates/lower-card-shower-plate.png" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:12px 12px 0 0;display:block;">
+      </figure>
+      <figure class="r-lower-card-doors-plate region plate" data-region="lower-card-doors-plate" style="margin:0;padding:8px 12px 0 12px;box-sizing:border-box;z-index:3;">
+        <img src="assets/plates/lower-card-doors-plate.png" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:12px 12px 0 0;display:block;">
+      </figure>
+      <figure class="r-lower-card-frameless-plate region plate" data-region="lower-card-frameless-plate" style="margin:0;padding:0;z-index:3;overflow:hidden;">
+        <img src="assets/plates/lower-card-frameless-plate.png" alt="" style="position:absolute;left:0;top:-12px;width:100%;height:calc(100% + 24px);object-fit:cover;object-position:top center;display:block;">
+      </figure>
+
+    </header>
+  </div>
+
+  <!-- Mobile Hero (for screens < 900px) -->
+  <header class="hero-mobile">
+    <div class="hero-mobile-header">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <svg viewBox="0 0 28 28" fill="none" style="width:26px;height:26px;">
+          <path d="M4 6L11 3V21L4 24V6Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.08)"/>
+          <path d="M11 3L17 7V25L11 21V3Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.18)"/>
+          <path d="M17 7L24 4V22L17 25V7Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+        <span style="font-family:'Yantramanav',sans-serif;font-weight:700;font-size:19px;color:#ffffff;">Vidrios, espejos y más</span>
+      </div>
+      <a href="tel:+5492625123456" style="display:flex;align-items:center;gap:6px;color:#a0b8cc;font-size:13px;text-decoration:none;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <span>Llamar</span>
+      </a>
+    </div>
+
+    <div class="hero-mobile-badges">
+      <span style="display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:9999px;background:#213353;border:1px solid #526b81;font-size:12px;color:#cbd5e1;">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#7fa1ba" stroke-width="2"><path d="M12 21C16 17 20 13.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 13.4183 8 17 12 21Z"/><circle cx="12" cy="10" r="3"/></svg>
+        General Alvear, Mendoza
+      </span>
+      <span style="display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:9999px;background:#453b32;border:1px solid #7a7163;font-size:12px;color:#ede4d8;">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#caa87f" stroke-width="2"><line x1="5" y1="19" x2="19" y2="5"/><circle cx="19" cy="5" r="1.5" fill="#caa87f"/></svg>
+        Fabricación a medida
+      </span>
+    </div>
+
+    <h1 class="hero-mobile-title">Vidrios, espejos y más</h1>
+    <p class="hero-mobile-sub">La claridad del oficio y el brillo del diseño a medida en General Alvear. Trabajos personalizados para hogares, comercios y obras.</p>
+
+    <div class="hero-mobile-ctas">
+      <a href="https://wa.me/5492625123456?text=Hola,%20quisiera%20pedir%20presupuesto%20por%20un%20trabajo%20en%20vidrios/espejos" class="btn-wa-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+        </svg>
+        <span>Cotizar por WhatsApp</span>
+      </a>
+      <a href="tel:+5492625123456" class="btn-secondary">
+        Llamar al taller (2625 12-3456)
+      </a>
+    </div>
+
+    <div class="hero-mobile-plates">
+      <div class="hero-mobile-plate-item">
+        <img src="assets/plates/card-mirror-plate.png" alt="Espejo LED">
+        <p>Espejos LED a medida</p>
+      </div>
+      <div class="hero-mobile-plate-item">
+        <img src="assets/plates/card-partition-plate.png" alt="Mamparas">
+        <p>Mamparas templadas</p>
+      </div>
+      <div class="hero-mobile-plate-item">
+        <img src="assets/plates/card-storefront-plate.png" alt="Vidrieras">
+        <p>Vidrieras comerciales</p>
+      </div>
+      <div class="hero-mobile-plate-item">
+        <img src="assets/plates/lower-card-doors-plate.png" alt="Cerramientos">
+        <p>Puertas y cerramientos</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section: Servicios -->
+    <section id="servicios" class="section-wrap">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Servicios de Vidriería y Cristales a Medida</h2>
+          <p>Cada trabajo se proyecta y corta a pedido según las medidas y necesidades de tu espacio. Desde cerramientos arquitectónicos hasta piezas decorativas de alta precisión.</p>
+        </div>
+
+        <div class="cards-grid-3">
+          <!-- Card 1: Espejos -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/plates/card-mirror-plate.png" alt="Espejos a medida y decorativos">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Espejos a Medida y Decorativos</h3>
+              <p class="service-card-desc">Espejos de cristal float de máxima nitidez con fondo protector antihumedad. Fabricamos modelos con retroiluminación LED perimetral, bordes biselados artesanales y cortes curvos orgánicos.</p>
+              <ul class="service-card-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Iluminación LED cálida, fría o neutra
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Biselados de 10mm a 25mm de ancho
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Espejos de cuerpo entero y vestidores
+                </li>
+              </ul>
+              <a href="https://wa.me/5492625123456?text=Hola,%20quisiera%20consultar%20por%20un%20espejo%20a%20medida" class="btn-wa-card">
+                Consultar medidas por WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Mamparas -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/plates/lower-card-shower-plate.png" alt="Mamparas de baño templadas">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Mamparas de Baño</h3>
+              <p class="service-card-desc">Cristal templado de seguridad de 8mm y 10mm para máxima durabilidad e higiene. Sistemas corredizos sobre riel superior de acero inoxidable, paños fijos Walk-In y puertas rebatibles estancas.</p>
+              <ul class="service-card-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Templado de seguridad de alta resistencia
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Herrajes y rodamientos inoxidables
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Sellado antihongos y perfiles herméticos
+                </li>
+              </ul>
+              <a href="https://wa.me/5492625123456?text=Hola,%20quisiera%20presupuestar%20una%20mampara%20de%20baño" class="btn-wa-card">
+                Presupuestar mampara
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Vidrieras y Cerramientos -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/plates/card-storefront-plate.png" alt="Vidrios para aberturas y cerramientos">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Aberturas, DVH y Cerramientos</h3>
+              <p class="service-card-desc">Doble Vidriado Hermético (DVH) para aislamiento térmico y acústico en ventanas y puertas. Vidrios laminados de seguridad (3+3 / 4+4) que protegen tu hogar y reducen ruidos exteriores.</p>
+              <ul class="service-card-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  DVH con cámara de aire deshidratado
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Laminados de seguridad antirrotura
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Colocación en aberturas de aluminio y chapa
+                </li>
+              </ul>
+              <a href="https://wa.me/5492625123456?text=Hola,%20quisiera%20cotizar%20vidrios%20para%20aberturas/cerramientos" class="btn-wa-card">
+                Cotizar cerramientos
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Divisores y Puertas -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/plates/card-partition-plate.png" alt="Divisores y mamparas de vidrio">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Divisores de Ambiente y Oficinas</h3>
+              <p class="service-card-desc">Estructuras de perfilería negra o aluminio combinadas con cristal laminado o templado. Permiten separar ambientes manteniendo la luz natural en estudios, comercios y viviendas.</p>
+              <ul class="service-card-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Estructuras de hierro y vidrio repartido
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Vidrios esmerilados y satinados para privacidad
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Instalación a medida en General Alvear
+                </li>
+              </ul>
+              <a href="https://wa.me/5492625123456?text=Hola,%20quisiera%20consultar%20por%20divisores%20de%20ambiente" class="btn-wa-card">
+                Consultar divisores
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5: Vitrinas y Mobiliario -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/plates/lower-card-doors-plate.png" alt="Vitrinas comerciales y muebles de vidrio">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Vitrinas, Mostradores y Muebles</h3>
+              <p class="service-card-desc">Cristales cortados y pulidos para equipamiento comercial y hogar: mostradores de atención, estantes flotantes reforzados y tapas de mesa en espesores de 8mm, 10mm y 12mm con bordes pulidos.</p>
+              <ul class="service-card-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Tapas de mesa con esquinas redondeadas
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Estantes reforzados para locales comerciales
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Vitrinas con cerraduras y guías de precisión
+                </li>
+              </ul>
+              <a href="https://wa.me/5492625123456?text=Hola,%20quisiera%20presupuestar%20un%20mueble/tapa%20de%20vidrio" class="btn-wa-card">
+                Cotizar mobiliario
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 6: Reposición Urgente -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/plates/lower-card-frameless-plate.png" alt="Reposición urgente y enmarcaciones">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Reposición Urgente y Enmarcaciones</h3>
+              <p class="service-card-desc">Atención rápida para roturas de vidrios en ventanas, puertas, vidrieras o claraboyas. También realizamos enmarcaciones artesanales para espejos, cuadros, obras y diplomas con molduras seleccionadas.</p>
+              <ul class="service-card-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Corte inmediato en taller para urgencias
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Enmarcado de cuadros con vidrio antirreflejo
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Retiro y colocación en domicilio
+                </li>
+              </ul>
+              <a href="https://wa.me/5492625123456?text=Hola,%20necesito%20una%20reposición%20urgente%20de%20vidrio" class="btn-wa-card">
+                Solicitar reposición urgente
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Tolerancias y Materiales -->
+    <section id="materiales" class="section-wrap alt-bg">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Materiales de Primera Calidad y Tolerancias de Taller</h2>
+          <p>La durabilidad y seguridad de una instalación dependen de elegir el espesor y composición correctos. Trabajamos exclusivamente con materia prima normalizada de primera calidad.</p>
+        </div>
+
+        <div class="cards-grid-4">
+          <div class="spec-item">
+            <span class="spec-tag">Espesores 4mm / 6mm / 8mm / 10mm</span>
+            <h3 class="spec-name">Vidrio Float Cristalino</h3>
+            <p class="spec-desc">Superficie perfectamente plana sin distorsiones ópticas. Corte artesanal diamantado y terminación de cantos pulidos brillantes para tapas de mesa y ventanas estándar.</p>
+          </div>
+
+          <div class="spec-item">
+            <span class="spec-tag">Espesores 3+3 / 4+4 / 5+5 mm</span>
+            <h3 class="spec-name">Laminado de Seguridad</h3>
+            <p class="spec-desc">Dos placas de vidrio unidas por una lámina elástica de polivinil butiral (PVB). En caso de golpe, el cristal se quiebra sin desprenderse, evitando accidentes y cortes.</p>
+          </div>
+
+          <div class="spec-item">
+            <span class="spec-tag">Espesores 8mm / 10mm / 12mm</span>
+            <h3 class="spec-name">Cristal Templado</h3>
+            <p class="spec-desc">Tratamiento térmico que quintuplica la resistencia al impacto y a variaciones térmicas. Utilizado indispensablemente en mamparas de baño y puertas sin marco.</p>
+          </div>
+
+          <div class="spec-item">
+            <span class="spec-tag">Cámara 6mm / 9mm / 12mm</span>
+            <h3 class="spec-name">Doble Vidriado (DVH)</h3>
+            <p class="spec-desc">Dos vidrios separados por una cámara de aire estanca deshidratada con perfil separador y doble sellado. Reduce drásticamente las pérdidas de calefacción y ruidos de la calle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Proceso de Cotización -->
+    <section id="proceso" class="section-wrap">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Cómo Solicitar tu Trabajo a Medida</h2>
+          <p>Un proceso directo, transparente y sin complicaciones. No cobramos por asesorarte y cada cotización se adapta a tu proyecto.</p>
+        </div>
+
+        <div class="cards-grid-4">
+          <div class="process-step">
+            <div class="step-badge">1</div>
+            <h3 class="step-title">Medidas o Foto por WhatsApp</h3>
+            <p class="step-desc">Tomá las medidas aproximadas de ancho y alto con un metro, o simplemente envianos una foto del lugar donde querés colocar el vidrio o espejo.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-badge">2</div>
+            <h3 class="step-title">Asesoramiento Técnico</h3>
+            <p class="step-desc">Te orientamos sobre el espesor recomendable (seguridad, viento, peso), el tipo de cristal y los herrajes más adecuados para tu necesidad.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-badge">3</div>
+            <h3 class="step-title">Presupuesto sin Cargo</h3>
+            <p class="step-desc">Te enviamos una cotización clara y detallada, indicando tiempos de entrega y alternativas de materiales según tu presupuesto.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-badge">4</div>
+            <h3 class="step-title">Corte e Instalación</h3>
+            <p class="step-desc">Elaboramos la pieza en nuestro taller de General Alvear. Podés retirarla personalmente o coordinar colocación profesional en tu domicilio.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:40px;text-align:center;">
+          <a href="https://wa.me/5492625123456?text=Hola,%20quisiera%20iniciar%20una%20consulta%20por%20un%20trabajo" class="btn-wa-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+            </svg>
+            <span>Enviar mensaje por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Taller, Ubicación y Cobertura -->
+    <section id="taller" class="section-wrap alt-bg">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Taller y Atención Local en General Alvear</h2>
+          <p>Somos un taller de oficio arraigado en la comunidad. Brindamos asesoramiento personalizado y respuesta directa tanto a familias como a comercios, arquitectos y constructores.</p>
+        </div>
+
+        <div class="workshop-card">
+          <div class="info-list">
+            <div class="info-item">
+              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M12 21C16 17 20 13.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 13.4183 8 17 12 21Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <h4 class="info-title">Ubicación del Taller</h4>
+                <p class="info-text">General Alvear, Mendoza, Argentina. Podés acercarte a nuestro taller para ver muestras de vidrios, catálogos de molduras o retirar cortes a medida.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <div>
+                <h4 class="info-title">Horarios de Atención</h4>
+                <p class="info-text">Lunes a Viernes: 8:30 a 12:30 y 16:30 a 20:30 hs.<br>Sábados: 9:00 a 13:00 hs.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+                <line x1="8" y1="2" x2="8" y2="18"/>
+                <line x1="16" y1="6" x2="16" y2="22"/>
+              </svg>
+              <div>
+                <h4 class="info-title">Zona de Cobertura e Instalación</h4>
+                <p class="info-text">Realizamos entregas y colocaciones en General Alvear (centro y distritos), Bowen, Real del Padre, Carmensa, Colonia Alvear Oeste y parajes aledaños.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;justify-content:center;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:28px;">
+            <h4 style="font-family:'Yantramanav',sans-serif;font-size:22px;margin:0 0 10px 0;color:#ffffff;">¿Tenés una consulta puntual?</h4>
+            <p style="font-size:14.5px;color:#94a3b8;line-height:1.55;margin:0 0 24px 0;">Escribinos o llamanos directamente. Te atendemos nosotros, con la experiencia directa de quienes cortan y colocan cada cristal.</p>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <a href="https://wa.me/5492625123456" class="btn-wa-primary" style="width:100%;box-sizing:border-box;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                </svg>
+                <span>WhatsApp: +54 9 2625 12-3456</span>
+              </a>
+              <a href="tel:+5492625123456" class="btn-secondary" style="width:100%;box-sizing:border-box;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>Llamar al taller</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: FAQ -->
+    <section id="preguntas" class="section-wrap">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Preguntas Frecuentes</h2>
+          <p>Respuestas a las dudas más habituales sobre presupuestos, medidas y colocaciones.</p>
+        </div>
+
+        <div style="max-width:860px;">
+          <div class="faq-item">
+            <h4 class="faq-q">¿Cómo tomo las medidas para pedir una cotización?</h4>
+            <p class="faq-a">Para una cotización inicial solo necesitás el ancho y alto aproximados en centímetros medidos con cualquier cinta métrica. Si el trabajo requiere colocación o corte especial, nosotros nos acercamos a verificar las medidas definitivas en obra antes de cortar.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4 class="faq-q">¿Qué espesor de vidrio conviene para cada caso?</h4>
+            <p class="faq-a">Depende del tamaño de la abertura y del nivel de seguridad requerido. Para ventanas chicas se suele usar float de 4mm; para puertas y ventanas medianas, laminado 3+3 mm; y para mamparas o paños grandes, templado de 8mm o laminado 4+4 mm. Al consultarnos por WhatsApp te indicamos la opción óptima.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4 class="faq-q">¿Realizan colocación e instalación a domicilio?</h4>
+            <p class="faq-a">Sí. Contamos con servicio de traslado y colocación profesional en todo General Alvear y zonas cercanas. También podés retirar tu corte en el taller si preferís hacer la colocación vos mismo.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4 class="faq-q">¿Hacen reposición urgente de vidrios rotos?</h4>
+            <p class="faq-a">Sí. Comprendemos que una vidriera o ventana rota compromete la seguridad y el clima del lugar. Disponemos de cortes inmediatos en taller para resolver roturas en el menor tiempo posible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg viewBox="0 0 28 28" fill="none" style="width:24px;height:24px;">
+          <path d="M4 6L11 3V21L4 24V6Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.08)"/>
+          <path d="M11 3L17 7V25L11 21V3Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.18)"/>
+          <path d="M17 7L24 4V22L17 25V7Z" stroke="#e2e8f0" stroke-width="1.5" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+        <span style="font-family:'Yantramanav',sans-serif;font-weight:700;font-size:17px;color:#ffffff;">Vidrios, espejos y más</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#materiales">Materiales</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#taller">Ubicación</a>
+        <a href="https://wa.me/5492625123456">WhatsApp</a>
+      </div>
+
+      <p class="footer-copy">© 2026 Vidrios, espejos y más · Taller artesanal de vidriería en General Alvear, Mendoza.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/5492625123456?text=Hola,%20quisiera%20consultar%20por%20un%20trabajo%20a%20medida%20en%20vidrios/espejos" class="floating-whatsapp" aria-label="Consultar por WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+    </svg>
+    <span>Consultar por WhatsApp</span>
+  </a>
+
+</body>
+</html>
