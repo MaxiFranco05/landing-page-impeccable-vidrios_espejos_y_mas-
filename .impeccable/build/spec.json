@@ -1,0 +1,1092 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-10-19T14:18:53.821Z",
+  "comp": ".impeccable/mocks/decision/challenger-cityscape.png",
+  "warnings": [
+    "region card-partition-plate: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region card-storefront-plate: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region lower-card-shower-plate: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region lower-card-doors-plate: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region lower-card-frameless-plate: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+  ],
+  "uncoveredInkCells": [],
+  "compSize": {
+    "width": 1376,
+    "height": 768
+  },
+  "aspect": 1.7917,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#1d2b2f",
+      "coverage": 0.6712
+    },
+    {
+      "hex": "#4f5c6a",
+      "coverage": 0.1243
+    },
+    {
+      "hex": "#a5a6a4",
+      "coverage": 0.0889
+    },
+    {
+      "hex": "#747f86",
+      "coverage": 0.0701
+    },
+    {
+      "hex": "#736d62",
+      "coverage": 0.0455
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0563,
+      "strength": 0.3116
+    },
+    {
+      "y": 0.2817,
+      "strength": 0.6753
+    },
+    {
+      "y": 0.3239,
+      "strength": 0.6092
+    },
+    {
+      "y": 0.5493,
+      "strength": 0.3101
+    },
+    {
+      "y": 0.8169,
+      "strength": 0.3452
+    },
+    {
+      "y": 0.8451,
+      "strength": 0.3339
+    },
+    {
+      "y": 0.8873,
+      "strength": 0.3339
+    },
+    {
+      "y": 0.9155,
+      "strength": 0.3596
+    },
+    {
+      "y": 0.9437,
+      "strength": 0.4006
+    }
+  ],
+  "regions": [
+    {
+      "id": "masthead-brand",
+      "kind": "chrome",
+      "note": "logo icon and brand name text Vidrios, espejos y más",
+      "grid": "A0:D0",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 550,
+        "h": 77
+      },
+      "aspect": 7.1429,
+      "palette": [
+        {
+          "hex": "#182828",
+          "coverage": 0.6213
+        },
+        {
+          "hex": "#516171",
+          "coverage": 0.2057
+        },
+        {
+          "hex": "#1e2333",
+          "coverage": 0.1355
+        },
+        {
+          "hex": "#a3acb6",
+          "coverage": 0.0193
+        },
+        {
+          "hex": "#d0d5db",
+          "coverage": 0.0182
+        }
+      ],
+      "detail": {
+        "energy": 15.9976
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "nav-links",
+      "kind": "control",
+      "note": "navigation links for Espejos, Mamparas, Vidrieras, Contacto",
+      "grid": "E0:G0",
+      "box": {
+        "x": 0.4,
+        "y": 0,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "px": {
+        "x": 550,
+        "y": 0,
+        "w": 413,
+        "h": 77
+      },
+      "aspect": 5.3636,
+      "palette": [
+        {
+          "hex": "#182828",
+          "coverage": 0.8531
+        },
+        {
+          "hex": "#181929",
+          "coverage": 0.1202
+        },
+        {
+          "hex": "#474955",
+          "coverage": 0.0107
+        },
+        {
+          "hex": "#8f929e",
+          "coverage": 0.0098
+        },
+        {
+          "hex": "#ccd0db",
+          "coverage": 0.0062
+        }
+      ],
+      "detail": {
+        "energy": 12.8332
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "nav-cta",
+      "kind": "control",
+      "note": "green WhatsApp button in top navigation bar",
+      "grid": "H0:I0",
+      "coverBox": {
+        "x": 0.7,
+        "y": 0,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.7217,
+        "y": 0.0078,
+        "w": 0.1047,
+        "h": 0.0703
+      },
+      "px": {
+        "x": 993,
+        "y": 6,
+        "w": 144,
+        "h": 54
+      },
+      "aspect": 2.6667,
+      "palette": [
+        {
+          "hex": "#3db969",
+          "coverage": 0.4928
+        },
+        {
+          "hex": "#162826",
+          "coverage": 0.4183
+        },
+        {
+          "hex": "#54a571",
+          "coverage": 0.0349
+        },
+        {
+          "hex": "#bcf6d5",
+          "coverage": 0.0276
+        },
+        {
+          "hex": "#96edb4",
+          "coverage": 0.0264
+        }
+      ],
+      "detail": {
+        "energy": 13.8832
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "badges-strip",
+      "kind": "control",
+      "note": "location and custom craft pill badges for General Alvear and Fabricación a medida",
+      "grid": "D1:G1",
+      "coverBox": {
+        "x": 0.3,
+        "y": 0.1,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.383,
+        "y": 0.1628,
+        "w": 0.2398,
+        "h": 0.0378
+      },
+      "px": {
+        "x": 527,
+        "y": 125,
+        "w": 330,
+        "h": 29
+      },
+      "aspect": 11.3793,
+      "palette": [
+        {
+          "hex": "#1f2e35",
+          "coverage": 0.5723
+        },
+        {
+          "hex": "#453b32",
+          "coverage": 0.3247
+        },
+        {
+          "hex": "#7a7163",
+          "coverage": 0.0434
+        },
+        {
+          "hex": "#213353",
+          "coverage": 0.0308
+        },
+        {
+          "hex": "#526b81",
+          "coverage": 0.0289
+        }
+      ],
+      "detail": {
+        "energy": 40.1532
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "hero-headline",
+      "kind": "text",
+      "note": "bold white main title Vidrios, espejos y más",
+      "grid": "C2:H3",
+      "box": {
+        "x": 0.2,
+        "y": 0.2,
+        "w": 0.6,
+        "h": 0.2
+      },
+      "px": {
+        "x": 275,
+        "y": 154,
+        "w": 826,
+        "h": 154
+      },
+      "aspect": 5.3636,
+      "palette": [
+        {
+          "hex": "#1a2a2b",
+          "coverage": 0.6866
+        },
+        {
+          "hex": "#1d2131",
+          "coverage": 0.1815
+        },
+        {
+          "hex": "#f7f7f7",
+          "coverage": 0.0977
+        },
+        {
+          "hex": "#b5bac2",
+          "coverage": 0.0172
+        },
+        {
+          "hex": "#3f4a52",
+          "coverage": 0.017
+        }
+      ],
+      "detail": {
+        "energy": 49.7327
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 18,
+          "capHeightPx": 50,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.64,
+          "advTall": 0.64,
+          "advX": 0.65,
+          "gap": 0.1,
+          "xRatio": 0.7,
+          "stemW": 0.202,
+          "contrast": 1.2703,
+          "serif": 1.0016,
+          "densTall": 0.5831,
+          "densX": 0.6118,
+          "weight": 0.5831
+        },
+        "widthClass": "normal",
+        "weightClass": "bold",
+        "chosen": {
+          "family": "Yantramanav",
+          "weight": 700,
+          "fontSizePx": 68,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 18,
+            "capHeightPx": 47,
+            "inkIsDark": true,
+            "allCaps": false,
+            "advance": 0.5957,
+            "advTall": 0.617,
+            "advX": 0.5957,
+            "gap": 0.1277,
+            "xRatio": 0.6809,
+            "stemW": 0.1867,
+            "contrast": 1.2681,
+            "serif": 1,
+            "densTall": 0.5499,
+            "densX": 0.5998,
+            "weight": 0.5499
+          },
+          "stamp": "118595ba1542"
+        }
+      }
+    },
+    {
+      "id": "hero-sub",
+      "kind": "text",
+      "note": "subtitle text La claridad del oficio y el brillo del diseño a medida",
+      "grid": "C3:H4",
+      "box": {
+        "x": 0.2,
+        "y": 0.3,
+        "w": 0.6,
+        "h": 0.2
+      },
+      "px": {
+        "x": 275,
+        "y": 230,
+        "w": 826,
+        "h": 154
+      },
+      "aspect": 5.3636,
+      "palette": [
+        {
+          "hex": "#1d292f",
+          "coverage": 0.8466
+        },
+        {
+          "hex": "#3db869",
+          "coverage": 0.0658
+        },
+        {
+          "hex": "#f7f7f7",
+          "coverage": 0.059
+        },
+        {
+          "hex": "#3e4b54",
+          "coverage": 0.0169
+        },
+        {
+          "hex": "#a9aeb7",
+          "coverage": 0.0117
+        }
+      ],
+      "detail": {
+        "energy": 33.7926
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-10-19T14:17:23.354Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "hero-cta",
+      "kind": "control",
+      "note": "emerald green WhatsApp consultation primary CTA button",
+      "grid": "E4:F4",
+      "coverBox": {
+        "x": 0.4,
+        "y": 0.4,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.4128,
+        "y": 0.4154,
+        "w": 0.1744,
+        "h": 0.0781
+      },
+      "px": {
+        "x": 568,
+        "y": 319,
+        "w": 240,
+        "h": 60
+      },
+      "aspect": 4,
+      "palette": [
+        {
+          "hex": "#3bb868",
+          "coverage": 0.5659
+        },
+        {
+          "hex": "#182828",
+          "coverage": 0.2855
+        },
+        {
+          "hex": "#246644",
+          "coverage": 0.0785
+        },
+        {
+          "hex": "#c9f7de",
+          "coverage": 0.0389
+        },
+        {
+          "hex": "#95dfae",
+          "coverage": 0.0311
+        }
+      ],
+      "detail": {
+        "energy": 20.4662
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "left-glass-prism",
+      "kind": "plate",
+      "note": "luminous glass prism facet with sharp bevelled edge and light caustics",
+      "grid": "A1:B5",
+      "box": {
+        "x": 0,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.5
+      },
+      "px": {
+        "x": 0,
+        "y": 77,
+        "w": 275,
+        "h": 384
+      },
+      "aspect": 0.7161,
+      "palette": [
+        {
+          "hex": "#2a3742",
+          "coverage": 0.5717
+        },
+        {
+          "hex": "#5d6c7a",
+          "coverage": 0.2939
+        },
+        {
+          "hex": "#8998a3",
+          "coverage": 0.1039
+        },
+        {
+          "hex": "#adc8d0",
+          "coverage": 0.0207
+        },
+        {
+          "hex": "#e4f0f3",
+          "coverage": 0.0097
+        }
+      ],
+      "detail": {
+        "energy": 7.2478
+      },
+      "medium": "raster",
+      "plate": "assets/plates/left-glass-prism.png",
+      "text": null
+    },
+    {
+      "id": "right-glass-prism",
+      "kind": "plate",
+      "note": "reflective glass corner facet with brilliant highlight refraction and prism ray",
+      "grid": "I0:J5",
+      "box": {
+        "x": 0.8,
+        "y": 0,
+        "w": 0.2,
+        "h": 0.6
+      },
+      "px": {
+        "x": 1101,
+        "y": 0,
+        "w": 275,
+        "h": 461
+      },
+      "aspect": 0.5965,
+      "palette": [
+        {
+          "hex": "#253139",
+          "coverage": 0.5133
+        },
+        {
+          "hex": "#4f5e6d",
+          "coverage": 0.3054
+        },
+        {
+          "hex": "#83919b",
+          "coverage": 0.1503
+        },
+        {
+          "hex": "#adc3cc",
+          "coverage": 0.0229
+        },
+        {
+          "hex": "#537373",
+          "coverage": 0.0081
+        }
+      ],
+      "detail": {
+        "energy": 6.9511
+      },
+      "medium": "raster",
+      "plate": "assets/plates/right-glass-prism.png",
+      "text": null
+    },
+    {
+      "id": "card-mirror-plate",
+      "kind": "plate",
+      "note": "photograph of bespoke full-length LED backlit mirror in luxury interior",
+      "grid": "C5:D7",
+      "box": {
+        "x": 0.2,
+        "y": 0.5,
+        "w": 0.2,
+        "h": 0.3
+      },
+      "px": {
+        "x": 275,
+        "y": 384,
+        "w": 275,
+        "h": 230
+      },
+      "aspect": 1.1957,
+      "palette": [
+        {
+          "hex": "#645f55",
+          "coverage": 0.4029
+        },
+        {
+          "hex": "#1d282e",
+          "coverage": 0.2907
+        },
+        {
+          "hex": "#84827e",
+          "coverage": 0.1134
+        },
+        {
+          "hex": "#aeaca6",
+          "coverage": 0.1126
+        },
+        {
+          "hex": "#434a51",
+          "coverage": 0.0805
+        }
+      ],
+      "detail": {
+        "energy": 21.1926
+      },
+      "medium": "raster",
+      "plate": "assets/plates/card-mirror-plate.png",
+      "text": null
+    },
+    {
+      "id": "card-mirror-caption",
+      "kind": "text",
+      "note": "caption text for bespoke backlit mirrors",
+      "grid": "C8:D8",
+      "coverBox": {
+        "x": 0.2,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.1999,
+        "y": 0.7995,
+        "w": 0.1875,
+        "h": 0.1003
+      },
+      "px": {
+        "x": 275,
+        "y": 614,
+        "w": 258,
+        "h": 77
+      },
+      "aspect": 3.3506,
+      "palette": [
+        {
+          "hex": "#3d474e",
+          "coverage": 0.4364
+        },
+        {
+          "hex": "#616770",
+          "coverage": 0.2842
+        },
+        {
+          "hex": "#192929",
+          "coverage": 0.1102
+        },
+        {
+          "hex": "#605342",
+          "coverage": 0.0857
+        },
+        {
+          "hex": "#b19f8b",
+          "coverage": 0.0835
+        }
+      ],
+      "detail": {
+        "energy": 29.8379
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 28,
+          "capHeightPx": 14.7,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6458,
+          "advTall": 0.6078,
+          "advX": 0.6458,
+          "gap": 0.114,
+          "xRatio": 0.6877,
+          "stemW": 0.1892,
+          "contrast": 1.1425,
+          "serif": 0.693,
+          "densTall": 0.6718,
+          "densX": 0.6113,
+          "weight": 0.6718
+        },
+        "widthClass": "normal",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "card-partition-plate",
+      "kind": "plate",
+      "note": "photograph of architectural black steel and glass divider partition",
+      "grid": "E5:F7",
+      "bleed": true,
+      "box": {
+        "x": 0.4,
+        "y": 0.5,
+        "w": 0.2,
+        "h": 0.3
+      },
+      "px": {
+        "x": 550,
+        "y": 384,
+        "w": 275,
+        "h": 230
+      },
+      "aspect": 1.1957,
+      "palette": [
+        {
+          "hex": "#a2a19c",
+          "coverage": 0.5122
+        },
+        {
+          "hex": "#1c2929",
+          "coverage": 0.2443
+        },
+        {
+          "hex": "#495258",
+          "coverage": 0.1093
+        },
+        {
+          "hex": "#73777f",
+          "coverage": 0.0828
+        },
+        {
+          "hex": "#8a7d6f",
+          "coverage": 0.0514
+        }
+      ],
+      "detail": {
+        "energy": 25.3855
+      },
+      "medium": "raster",
+      "plate": "assets/plates/card-partition-plate.png",
+      "text": null
+    },
+    {
+      "id": "card-partition-caption",
+      "kind": "text",
+      "note": "caption text for architectural glass partitions",
+      "grid": "E8:F8",
+      "box": {
+        "x": 0.4,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 550,
+        "y": 614,
+        "w": 275,
+        "h": 77
+      },
+      "aspect": 3.5714,
+      "palette": [
+        {
+          "hex": "#3d474f",
+          "coverage": 0.4416
+        },
+        {
+          "hex": "#646a72",
+          "coverage": 0.2329
+        },
+        {
+          "hex": "#a8978d",
+          "coverage": 0.1845
+        },
+        {
+          "hex": "#192828",
+          "coverage": 0.0882
+        },
+        {
+          "hex": "#181828",
+          "coverage": 0.0528
+        }
+      ],
+      "detail": {
+        "energy": 27.7793
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-10-19T14:19:35.000Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "card-storefront-plate",
+      "kind": "plate",
+      "note": "photograph of modern glass storefront entrance with large glass panes",
+      "grid": "G5:I7",
+      "bleed": true,
+      "box": {
+        "x": 0.6,
+        "y": 0.5,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "px": {
+        "x": 826,
+        "y": 384,
+        "w": 413,
+        "h": 230
+      },
+      "aspect": 1.7957,
+      "palette": [
+        {
+          "hex": "#1e292e",
+          "coverage": 0.587
+        },
+        {
+          "hex": "#717979",
+          "coverage": 0.1739
+        },
+        {
+          "hex": "#b0afa9",
+          "coverage": 0.0897
+        },
+        {
+          "hex": "#555966",
+          "coverage": 0.0759
+        },
+        {
+          "hex": "#454943",
+          "coverage": 0.0735
+        }
+      ],
+      "detail": {
+        "energy": 19.169
+      },
+      "medium": "raster",
+      "plate": "assets/plates/card-storefront-plate.png",
+      "text": null
+    },
+    {
+      "id": "card-storefront-caption",
+      "kind": "text",
+      "note": "caption text for modern storefront glass installations",
+      "grid": "G8:I8",
+      "coverBox": {
+        "x": 0.6,
+        "y": 0.8,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.6134,
+        "y": 0.7995,
+        "w": 0.2093,
+        "h": 0.1003
+      },
+      "px": {
+        "x": 844,
+        "y": 614,
+        "w": 288,
+        "h": 77
+      },
+      "aspect": 3.7403,
+      "palette": [
+        {
+          "hex": "#3d474e",
+          "coverage": 0.4016
+        },
+        {
+          "hex": "#606771",
+          "coverage": 0.233
+        },
+        {
+          "hex": "#929fac",
+          "coverage": 0.1955
+        },
+        {
+          "hex": "#192929",
+          "coverage": 0.1134
+        },
+        {
+          "hex": "#181929",
+          "coverage": 0.0565
+        }
+      ],
+      "detail": {
+        "energy": 26.0793
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-10-19T14:20:06.501Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "lower-card-shower-plate",
+      "kind": "plate",
+      "note": "photograph of custom glass shower enclosure",
+      "grid": "C9:D9",
+      "bleed": true,
+      "box": {
+        "x": 0.2,
+        "y": 0.9,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 275,
+        "y": 691,
+        "w": 275,
+        "h": 77
+      },
+      "aspect": 3.5714,
+      "palette": [
+        {
+          "hex": "#99948b",
+          "coverage": 0.3125
+        },
+        {
+          "hex": "#182828",
+          "coverage": 0.3042
+        },
+        {
+          "hex": "#cac7c1",
+          "coverage": 0.1494
+        },
+        {
+          "hex": "#6b6e75",
+          "coverage": 0.1328
+        },
+        {
+          "hex": "#3c464d",
+          "coverage": 0.1011
+        }
+      ],
+      "detail": {
+        "energy": 15.3905
+      },
+      "medium": "raster",
+      "plate": "assets/plates/lower-card-shower-plate.png",
+      "text": null
+    },
+    {
+      "id": "lower-card-doors-plate",
+      "kind": "plate",
+      "note": "photograph of sliding tempered glass doors",
+      "grid": "E9:F9",
+      "bleed": true,
+      "box": {
+        "x": 0.4,
+        "y": 0.9,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 550,
+        "y": 691,
+        "w": 275,
+        "h": 77
+      },
+      "aspect": 3.5714,
+      "palette": [
+        {
+          "hex": "#9f9b94",
+          "coverage": 0.4137
+        },
+        {
+          "hex": "#182828",
+          "coverage": 0.2193
+        },
+        {
+          "hex": "#737576",
+          "coverage": 0.2189
+        },
+        {
+          "hex": "#414950",
+          "coverage": 0.1222
+        },
+        {
+          "hex": "#161624",
+          "coverage": 0.0259
+        }
+      ],
+      "detail": {
+        "energy": 15.6242
+      },
+      "medium": "raster",
+      "plate": "assets/plates/lower-card-doors-plate.png",
+      "text": null
+    },
+    {
+      "id": "lower-card-frameless-plate",
+      "kind": "plate",
+      "note": "photograph of curved frameless decorative wall mirrors",
+      "grid": "G9:I9",
+      "bleed": true,
+      "box": {
+        "x": 0.6,
+        "y": 0.9,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "px": {
+        "x": 826,
+        "y": 691,
+        "w": 413,
+        "h": 77
+      },
+      "aspect": 5.3636,
+      "palette": [
+        {
+          "hex": "#182828",
+          "coverage": 0.5006
+        },
+        {
+          "hex": "#b9b6b2",
+          "coverage": 0.1764
+        },
+        {
+          "hex": "#75797e",
+          "coverage": 0.1298
+        },
+        {
+          "hex": "#766f62",
+          "coverage": 0.1171
+        },
+        {
+          "hex": "#404950",
+          "coverage": 0.0761
+        }
+      ],
+      "detail": {
+        "energy": 13.5863
+      },
+      "medium": "raster",
+      "plate": "assets/plates/lower-card-frameless-plate.png",
+      "text": null
+    }
+  ],
+  "compSha256": "afc8c378adc78b6ae91e8c2fd0d7fc530b01c203e4fe509d9bee2df0f022a8fe",
+  "regionsSource": {
+    "path": ".impeccable/build/regions.json",
+    "sha256": "6fe3d7028574b5e5d3f986c19dd05c9d60042edc9795295a55d6fbf744ed3ac5"
+  }
+}

@@ -1,0 +1,717 @@
+{
+  "tool": "comp-diff",
+  "version": 1,
+  "createdAt": "2026-10-20T00:00:15.142Z",
+  "label": "hero",
+  "comp": ".impeccable/mocks/decision/challenger-cityscape.png",
+  "build": ".impeccable/review/hero-repro.png",
+  "spec": ".impeccable/build/spec.json",
+  "compSize": "1376x768",
+  "buildSize": "1376x768",
+  "align": "top",
+  "overall": 0.7419,
+  "verdict": "drift",
+  "scores": {
+    "overall": 0.7419,
+    "structure": 0.6162,
+    "color": 0.8032,
+    "colorIntersection": 0.7574,
+    "paletteMatch": 0.8279,
+    "detail": 0.7615,
+    "detailRaw": 0.7875,
+    "detailAdded": 0.0521,
+    "bands": 0.9
+  },
+  "palette": {
+    "comp": [
+      {
+        "hex": "#1d2b2f",
+        "coverage": 0.6507
+      },
+      {
+        "hex": "#4f5c6a",
+        "coverage": 0.1205
+      },
+      {
+        "hex": "#a5a6a4",
+        "coverage": 0.0862
+      },
+      {
+        "hex": "#747f86",
+        "coverage": 0.068
+      },
+      {
+        "hex": "#736d62",
+        "coverage": 0.0441
+      },
+      {
+        "hex": "#161624",
+        "coverage": 0.0306
+      }
+    ],
+    "build": [
+      {
+        "hex": "#182829",
+        "coverage": 0.6232
+      },
+      {
+        "hex": "#464e50",
+        "coverage": 0.1323
+      },
+      {
+        "hex": "#817e74",
+        "coverage": 0.0784
+      },
+      {
+        "hex": "#232535",
+        "coverage": 0.0743
+      },
+      {
+        "hex": "#acaaa5",
+        "coverage": 0.061
+      },
+      {
+        "hex": "#0c0c11",
+        "coverage": 0.0309
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "masthead-brand",
+      "x": 0,
+      "y": 0,
+      "w": 0.4,
+      "h": 0.1,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.6635,
+        "structure": 0.7982,
+        "color": 0.7105,
+        "colorIntersection": 0.6005,
+        "paletteMatch": 0.7697,
+        "detail": 0.5662,
+        "detailRaw": 0.5714,
+        "detailAdded": 0.0104,
+        "bands": 0.4333
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 487,
+          "h": 77
+        },
+        "build": {
+          "x": 248,
+          "y": 26,
+          "w": 229,
+          "h": 24
+        }
+      }
+    },
+    {
+      "id": "nav-links",
+      "x": 0.4,
+      "y": 0,
+      "w": 0.3,
+      "h": 0.1,
+      "kind": "control",
+      "score": {
+        "overall": 0.7895,
+        "structure": 0.9076,
+        "color": 0.8786,
+        "colorIntersection": 0.8346,
+        "paletteMatch": 0.9023,
+        "detail": 0.3678,
+        "detailRaw": 0.4043,
+        "detailAdded": 0.0729,
+        "bands": 0
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 69,
+          "y": 28,
+          "w": 344,
+          "h": 15
+        },
+        "build": {
+          "x": 81,
+          "y": 33,
+          "w": 330,
+          "h": 13
+        }
+      }
+    },
+    {
+      "id": "nav-cta",
+      "x": 0.7217,
+      "y": 0.0078,
+      "w": 0.1047,
+      "h": 0.0703,
+      "kind": "control",
+      "score": {
+        "overall": 0.7475,
+        "structure": 0.7828,
+        "color": 0.7679,
+        "colorIntersection": 0.6353,
+        "paletteMatch": 0.8393,
+        "detail": 0.6321,
+        "detailRaw": 0.6634,
+        "detailAdded": 0.0625,
+        "bands": 0.88
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 144,
+          "h": 54
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 144,
+          "h": 54
+        }
+      }
+    },
+    {
+      "id": "badges-strip",
+      "x": 0.383,
+      "y": 0.1628,
+      "w": 0.2398,
+      "h": 0.0378,
+      "kind": "control",
+      "score": {
+        "overall": 0.6691,
+        "structure": 0.709,
+        "color": 0.7609,
+        "colorIntersection": 0.5871,
+        "paletteMatch": 0.8545,
+        "detail": 0.4186,
+        "detailRaw": 0.4863,
+        "detailAdded": 0.1354,
+        "bands": 0.8286
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 9,
+          "y": 7,
+          "w": 314,
+          "h": 22
+        },
+        "build": {
+          "x": 9,
+          "y": 7,
+          "w": 312,
+          "h": 22
+        }
+      }
+    },
+    {
+      "id": "hero-headline",
+      "x": 0.2,
+      "y": 0.2,
+      "w": 0.6,
+      "h": 0.2,
+      "kind": "text",
+      "score": {
+        "overall": 0.5872,
+        "structure": 0.5707,
+        "color": 0.7718,
+        "colorIntersection": 0.6479,
+        "paletteMatch": 0.8386,
+        "detail": 0.4325,
+        "detailRaw": 0.5158,
+        "detailAdded": 0.1667,
+        "bands": 0.44
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 70,
+          "y": 0,
+          "w": 756,
+          "h": 147
+        },
+        "build": {
+          "x": 116,
+          "y": 35,
+          "w": 593,
+          "h": 104
+        }
+      }
+    },
+    {
+      "id": "hero-sub",
+      "x": 0.2,
+      "y": 0.3,
+      "w": 0.6,
+      "h": 0.2,
+      "kind": "text",
+      "score": {
+        "overall": 0.6919,
+        "structure": 0.7294,
+        "color": 0.7895,
+        "colorIntersection": 0.585,
+        "paletteMatch": 0.8996,
+        "detail": 0.4255,
+        "detailRaw": 0.4567,
+        "detailAdded": 0.0625,
+        "bands": 0.66
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 826,
+          "h": 144
+        },
+        "build": {
+          "x": 128,
+          "y": 0,
+          "w": 581,
+          "h": 143
+        }
+      }
+    },
+    {
+      "id": "hero-cta",
+      "x": 0.4128,
+      "y": 0.4154,
+      "w": 0.1744,
+      "h": 0.0781,
+      "kind": "control",
+      "score": {
+        "overall": 0.7278,
+        "structure": 0.8436,
+        "color": 0.6126,
+        "colorIntersection": 0.4403,
+        "paletteMatch": 0.7054,
+        "detail": 0.6686,
+        "detailRaw": 0.6686,
+        "detailAdded": 0,
+        "bands": 0.9429
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 240,
+          "h": 60
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 240,
+          "h": 60
+        }
+      }
+    },
+    {
+      "id": "left-glass-prism",
+      "x": 0,
+      "y": 0.1,
+      "w": 0.2,
+      "h": 0.5,
+      "kind": "plate",
+      "score": {
+        "overall": 0.5878,
+        "structure": 0.7412,
+        "color": 0.5919,
+        "colorIntersection": 0.5148,
+        "paletteMatch": 0.6334,
+        "detail": 0.4682,
+        "detailRaw": 0.5411,
+        "detailAdded": 0.1458,
+        "bands": 1
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 275,
+          "h": 384
+        },
+        "build": {
+          "x": 8,
+          "y": 0,
+          "w": 251,
+          "h": 383
+        }
+      }
+    },
+    {
+      "id": "right-glass-prism",
+      "x": 0.8,
+      "y": 0,
+      "w": 0.2,
+      "h": 0.6,
+      "kind": "plate",
+      "score": {
+        "overall": 0.3858,
+        "structure": 0.4655,
+        "color": 0.5356,
+        "colorIntersection": 0.3485,
+        "paletteMatch": 0.6364,
+        "detail": 0.2245,
+        "detailRaw": 0.3495,
+        "detailAdded": 0.25,
+        "bands": 1
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 273,
+          "h": 461
+        },
+        "build": {
+          "x": 0,
+          "y": 14,
+          "w": 275,
+          "h": 447
+        }
+      }
+    },
+    {
+      "id": "card-mirror-plate",
+      "x": 0.2,
+      "y": 0.5,
+      "w": 0.2,
+      "h": 0.3,
+      "kind": "plate",
+      "score": {
+        "overall": 0.5032,
+        "structure": 0.5258,
+        "color": 0.5042,
+        "colorIntersection": 0.4409,
+        "paletteMatch": 0.5382,
+        "detail": 0.5418,
+        "detailRaw": 0.6356,
+        "detailAdded": 0.1875,
+        "bands": 0
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 275,
+          "h": 230
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 275,
+          "h": 230
+        }
+      }
+    },
+    {
+      "id": "card-mirror-caption",
+      "x": 0.1999,
+      "y": 0.7995,
+      "w": 0.1875,
+      "h": 0.1003,
+      "kind": "text",
+      "score": {
+        "overall": 0.5129,
+        "structure": 0.4854,
+        "color": 0.5553,
+        "colorIntersection": 0.2854,
+        "paletteMatch": 0.7006,
+        "detail": 0.4569,
+        "detailRaw": 0.5194,
+        "detailAdded": 0.125,
+        "bands": 0.6286
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 258,
+          "h": 77
+        },
+        "build": {
+          "x": 15,
+          "y": 0,
+          "w": 224,
+          "h": 47
+        }
+      }
+    },
+    {
+      "id": "card-partition-plate",
+      "x": 0.4,
+      "y": 0.5,
+      "w": 0.2,
+      "h": 0.3,
+      "kind": "plate",
+      "score": {
+        "overall": 0.6005,
+        "structure": 0.4653,
+        "color": 0.6529,
+        "colorIntersection": 0.424,
+        "paletteMatch": 0.7762,
+        "detail": 0.6673,
+        "detailRaw": 0.7714,
+        "detailAdded": 0.2083,
+        "bands": 0.4
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 276,
+          "h": 230
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 276,
+          "h": 230
+        }
+      }
+    },
+    {
+      "id": "card-partition-caption",
+      "x": 0.4,
+      "y": 0.8,
+      "w": 0.2,
+      "h": 0.1,
+      "kind": "text",
+      "score": {
+        "overall": 0.5578,
+        "structure": 0.5647,
+        "color": 0.5728,
+        "colorIntersection": 0.2926,
+        "paletteMatch": 0.7236,
+        "detail": 0.3738,
+        "detailRaw": 0.3998,
+        "detailAdded": 0.0521,
+        "bands": 0.7619
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 276,
+          "h": 77
+        },
+        "build": {
+          "x": 12,
+          "y": 0,
+          "w": 252,
+          "h": 47
+        }
+      }
+    },
+    {
+      "id": "card-storefront-plate",
+      "x": 0.6,
+      "y": 0.5,
+      "w": 0.3,
+      "h": 0.3,
+      "kind": "plate",
+      "score": {
+        "overall": 0.6808,
+        "structure": 0.5613,
+        "color": 0.7729,
+        "colorIntersection": 0.702,
+        "paletteMatch": 0.8111,
+        "detail": 0.6957,
+        "detailRaw": 0.7009,
+        "detailAdded": 0.0104,
+        "bands": 0.76
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 24,
+          "y": 42,
+          "w": 276,
+          "h": 188
+        },
+        "build": {
+          "x": 24,
+          "y": 66,
+          "w": 276,
+          "h": 164
+        }
+      }
+    },
+    {
+      "id": "card-storefront-caption",
+      "x": 0.6134,
+      "y": 0.7995,
+      "w": 0.2093,
+      "h": 0.1003,
+      "kind": "text",
+      "score": {
+        "overall": 0.5469,
+        "structure": 0.5043,
+        "color": 0.6177,
+        "colorIntersection": 0.2828,
+        "paletteMatch": 0.798,
+        "detail": 0.5004,
+        "detailRaw": 0.5681,
+        "detailAdded": 0.1354,
+        "bands": 0.6533
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 5,
+          "y": 0,
+          "w": 278,
+          "h": 70
+        },
+        "build": {
+          "x": 6,
+          "y": 0,
+          "w": 276,
+          "h": 77
+        }
+      }
+    },
+    {
+      "id": "lower-card-shower-plate",
+      "x": 0.2,
+      "y": 0.9,
+      "w": 0.2,
+      "h": 0.1,
+      "kind": "plate",
+      "score": {
+        "overall": 0.5419,
+        "structure": 0.4348,
+        "color": 0.7194,
+        "colorIntersection": 0.5498,
+        "paletteMatch": 0.8107,
+        "detail": 0.5225,
+        "detailRaw": 0.6787,
+        "detailAdded": 0.3125,
+        "bands": 0.5619
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 275,
+          "h": 77
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 275,
+          "h": 77
+        }
+      }
+    },
+    {
+      "id": "lower-card-doors-plate",
+      "x": 0.4,
+      "y": 0.9,
+      "w": 0.2,
+      "h": 0.1,
+      "kind": "plate",
+      "score": {
+        "overall": 0.5393,
+        "structure": 0.4458,
+        "color": 0.7468,
+        "colorIntersection": 0.7178,
+        "paletteMatch": 0.7624,
+        "detail": 0.4704,
+        "detailRaw": 0.6839,
+        "detailAdded": 0.4271,
+        "bands": 0.8667
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 276,
+          "h": 77
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 276,
+          "h": 77
+        }
+      }
+    },
+    {
+      "id": "lower-card-frameless-plate",
+      "x": 0.6,
+      "y": 0.9,
+      "w": 0.3,
+      "h": 0.1,
+      "kind": "plate",
+      "score": {
+        "overall": 0.5934,
+        "structure": 0.7131,
+        "color": 0.8749,
+        "colorIntersection": 0.7503,
+        "paletteMatch": 0.9421,
+        "detail": 0.4303,
+        "detailRaw": 0.4772,
+        "detailAdded": 0.0938,
+        "bands": 0.5
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 24,
+          "y": 16,
+          "w": 262,
+          "h": 61
+        },
+        "build": {
+          "x": 24,
+          "y": 17,
+          "w": 260,
+          "h": 60
+        }
+      }
+    }
+  ],
+  "files": {
+    "sideBySide": "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/side-by-side.png",
+    "heatmap": "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/heatmap.png",
+    "regionFiles": [
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/masthead-brand.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/nav-links.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/nav-cta.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/badges-strip.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/hero-headline.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/hero-sub.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/hero-cta.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/left-glass-prism.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/right-glass-prism.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/card-mirror-plate.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/card-mirror-caption.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/card-partition-plate.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/card-partition-caption.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/card-storefront-plate.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/card-storefront-caption.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/lower-card-shower-plate.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/lower-card-doors-plate.png",
+      "C:/Users/maxif/Desktop/projects/landing-page-vidrios-espejos-y-mas/.impeccable/review/diff/hero/regions/lower-card-frameless-plate.png"
+    ]
+  }
+}

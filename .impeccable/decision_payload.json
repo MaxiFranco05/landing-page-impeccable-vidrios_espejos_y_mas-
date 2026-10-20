@@ -1,0 +1,203 @@
+{
+  "options": [
+    {
+      "id": "assigned-enmarcaciones",
+      "kind": "assigned",
+      "label": "El Taller de Enmarcaciones y Galería de Oficio",
+      "thesis": "El encuentro noble entre madera lustrada, ensamble milimétrico en inglete y la claridad cristalina del vidrio de conservación.",
+      "palette": [
+        "#141210",
+        "#f6f2ea",
+        "#b45309",
+        "#38bdf8"
+      ],
+      "materials": [
+        "nogal oscuro y lino",
+        "vidrio float cristalino y biseles brillantes",
+        "perfiles de aluminio anodizado"
+      ],
+      "viewport": "Vidriera de taller con foco en trabajos terminados de alta factura, cotas precisas de corte y llamada directa a WhatsApp.",
+      "risk": "Exige mantener un estándar de fotografía real impecable para no virar hacia anticuario.",
+      "raised": [
+        "Rigor métrico de siete segmentos: cotas exactas y tolerancias especificadas en cada tipo de trabajo.",
+        "Orientación inmediata de señalética: acción de contacto a WhatsApp y llamada directa visible y fija.",
+        "Guía pedagógica de zine: explicación clara y accesible de cómo tomar medidas tentativas desde casa."
+      ],
+      "comp": ".impeccable/mocks/decision/assigned-enmarcaciones.png"
+    },
+    {
+      "id": "pick-mesa-corte",
+      "kind": "pick",
+      "label": "La Mesa de Paño y Diamante de Corte",
+      "kicker": "IMPECCABLE’S PICK",
+      "thesis": "La autenticidad pura del taller: paño verde oscuro amortiguador, reglas de precisión y el trazo nítido del diamante cortando el cristal.",
+      "palette": [
+        "#0f1a16",
+        "#f2f7f5",
+        "#d97706",
+        "#2dd4bf"
+      ],
+      "materials": [
+        "fieltro verde botella oscuro",
+        "canto de vidrio pulido al hilo",
+        "madera de escuadras y latón de herramientas"
+      ],
+      "viewport": "Composición táctil de mesa de trabajo que exhibe la solidez del oficio, muestras de espesores y cotización inmediata.",
+      "risk": "Es la dirección más natural y arquetípica para este rubro artesanal.",
+      "comp": ".impeccable/mocks/decision/pick-mesa-corte.png"
+    },
+    {
+      "id": "challenger-cityscape",
+      "kind": "challenger",
+      "catalogId": "light-shadow-caustics-rain-night-cityscape",
+      "label": "Luz, Reflejos y Caústicas Urbanas",
+      "verdict": "competitive",
+      "thesis": "El vidrio y el espejo como reflectores puros de luz, contrastes de brillo cristalino y destellos caústicos sobre superficies pulidas.",
+      "palette": [
+        "#0b0f19",
+        "#f8fafc",
+        "#38bdf8",
+        "#f59e0b"
+      ],
+      "materials": [
+        "espejos float reflectivos",
+        "vidrio templado con bordes biselados",
+        "luces rasantes y caústicas"
+      ],
+      "viewport": "Frente nocturno de vidriera iluminada con reflejos de gran profundidad y espejos decorativos que amplían el espacio.",
+      "case": "Funde de forma impactante el magnetismo visual de los reflejos en el vidrio, aunque se distancia ligeramente del taller diurno.",
+      "risk": "Puede percibirse excesivamente arquitectónico o nocturno si no se acompaña de calidez humana.",
+      "comp": ".impeccable/mocks/decision/challenger-cityscape.png",
+      "hero": "https://impeccable.style/worlds/cards/light-shadow-caustics-rain-night-cityscape-hero.webp"
+    },
+    {
+      "id": "challenger-multiplane",
+      "kind": "challenger",
+      "catalogId": "cinema-cinematography-editing-multiplane-cel-dawn",
+      "label": "Planos Traslúcidos en Profundidad",
+      "verdict": "competitive",
+      "thesis": "Capas superpuestas de cristales con diferentes niveles de transparencia (esmerilado, laminado y float) creando profundidad ambiental.",
+      "palette": [
+        "#1a202c",
+        "#edf2f7",
+        "#0d9488",
+        "#cbd5e1"
+      ],
+      "materials": [
+        "vidrio esmerilado translúcido",
+        "vidrio incoloro pulido",
+        "herrajes de acero inoxidable"
+      ],
+      "viewport": "Capas deslizantes que descubren mamparas, divisores de ambiente y vitrinas con navegación por planos visuales.",
+      "case": "Traduce excelentemente las aplicaciones de vidrios divisorios y mamparas de baño.",
+      "risk": "Requiere cuidar que las capas de profundidad no confundan la navegación en teléfonos móviles.",
+      "comp": ".impeccable/mocks/decision/challenger-multiplane.png",
+      "hero": "https://impeccable.style/worlds/cards/cinema-cinematography-editing-multiplane-cel-dawn-hero.webp"
+    },
+    {
+      "id": "challenger-segment",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-seven-segment-alarm-clock",
+      "label": "Rigor Métrico Digital",
+      "verdict": "declined",
+      "palette": [
+        "#111827",
+        "#f3f4f6",
+        "#ef4444"
+      ],
+      "materials": [
+        "segmentos numéricos",
+        "acrílico negro"
+      ],
+      "case": "Pierde el calor humano y la nobleza del oficio artesanal en favor de frialdad técnica.",
+      "kept": "Rigor milimétrico en especificaciones de corte y espesor.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-seven-segment-alarm-clock-hero.webp"
+    },
+    {
+      "id": "challenger-zine",
+      "kind": "challenger",
+      "catalogId": "hand-drawn-zine-explainer",
+      "label": "Zine Explicativo Ilustrado",
+      "verdict": "declined",
+      "palette": [
+        "#fdfbf7",
+        "#1e293b",
+        "#06b6d4"
+      ],
+      "materials": [
+        "papel de boceto",
+        "marcador y resaltador"
+      ],
+      "case": "Demasiado informal para una empresa que instala cerramientos y mamparas de seguridad.",
+      "kept": "Guía pedagógica en 3 pasos para que el cliente sepa qué medidas enviar por WhatsApp.",
+      "hero": "https://impeccable.style/worlds/cards/hand-drawn-zine-explainer-hero.webp"
+    },
+    {
+      "id": "challenger-ligne-claire",
+      "kind": "challenger",
+      "catalogId": "pop-culture-shelf-ligne-claire-album",
+      "label": "Línea Clara Estructurada",
+      "verdict": "declined",
+      "palette": [
+        "#f8fafc",
+        "#0f172a",
+        "#2563eb"
+      ],
+      "materials": [
+        "tinta negra uniforme",
+        "rellenos puros sin sombras"
+      ],
+      "case": "El estilo de ilustración cómic anula el juego de luces y texturas esenciales del vidrio y los espejos.",
+      "kept": "Contornos limpios y nitidez sin ambigüedades en perfiles y aberturas.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-ligne-claire-album-hero.webp"
+    },
+    {
+      "id": "challenger-signage",
+      "kind": "challenger",
+      "catalogId": "wayfinding-cartography-signage-terminal-yellow-wayfinding",
+      "label": "Señalética de Terminal",
+      "verdict": "declined",
+      "palette": [
+        "#facc15",
+        "#18181b",
+        "#ffffff"
+      ],
+      "materials": [
+        "paneles amarillos de alto contraste",
+        "pictogramas universales"
+      ],
+      "case": "Remite a transporte masivo y aeropuertos, disonante con un taller de proximidad.",
+      "kept": "Visibilidad prioritaria e inequívoca del canal de contacto directo.",
+      "hero": "https://impeccable.style/worlds/cards/wayfinding-cartography-signage-terminal-yellow-wayfinding-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "Estándar Genérico del Rubro",
+    "thesis": "El diseño genérico corporativo con tonos azules fríos y plantillas genéricas que suele verse en sitios web de vidrierías industriales.",
+    "palette": [
+      "#ffffff",
+      "#0f172a",
+      "#0284c7"
+    ],
+    "materials": [
+      "grilla blanca estándar",
+      "imágenes de stock impersonales"
+    ],
+    "viewport": "Hero centrado convencional con titular genérico y botones azules estándar.",
+    "risk": "Indistinguible de cualquier otra empresa y sin alma artesanal local.",
+    "comp": ".impeccable/mocks/decision/canon.png"
+  },
+  "steer": true
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "stage": "hero",
+  "id": "hero",
+  "title": "First viewport",
+  "comp": {
+    "path": ".impeccable/mocks/decision/challenger-cityscape.png",
+    "width": 1376,
+    "height": 768
+  },
+  "components": [
+    {
+      "id": "first-viewport",
+      "name": "First viewport",
+      "medium": "HTML / CSS",
+      "note": "Assembled first viewport",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "preview": {
+        "kind": "page",
+        "path": "index.html"
+      },
+      "dependencies": [
+        ".impeccable/build/scaffold/layout.css",
+        "assets/fonts/fonts.css",
+        "assets/fonts/Yantramanav-Bold.ttf",
+        "assets/fonts/Yantramanav-Regular.ttf",
+        "assets/plates/left-glass-prism.png",
+        "assets/plates/right-glass-prism.png",
+        "assets/plates/card-mirror-plate.png",
+        "assets/plates/card-partition-plate.png",
+        "assets/plates/card-storefront-plate.png",
+        "assets/plates/lower-card-shower-plate.png",
+        "assets/plates/lower-card-doors-plate.png",
+        "assets/plates/lower-card-frameless-plate.png"
+      ]
+    }
+  ]
+}

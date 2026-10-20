@@ -1,0 +1,16 @@
+{
+  "packetRevision": "3724770aaa1bc0414fa501704ef7c52eb7796913a67386689927d9ec11ade192",
+  "decisions": {
+    "left-glass-prism": { "action": "accept" },
+    "right-glass-prism": { "action": "accept" },
+    "card-mirror-plate": { "action": "accept" },
+    "card-partition-plate": { "action": "accept" },
+    "card-storefront-plate": { "action": "accept" },
+    "lower-card-shower-plate": { "action": "accept" },
+    "lower-card-doors-plate": { "action": "accept" },
+    "lower-card-frameless-plate": { "action": "accept" },
+    "masthead-brand": { "action": "accept" }
+  },
+  "missing": [],
+  "inventoryConfirmed": true
+}

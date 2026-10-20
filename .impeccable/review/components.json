@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 3,
+  "stage": "components",
+  "id": "components",
+  "title": "Plan and asset review · index.html",
+  "comp": {
+    "path": ".impeccable/mocks/decision/challenger-cityscape.png",
+    "width": 1376,
+    "height": 768
+  },
+  "specSha256": "f3021172fcec3527c315717eabf82fcf634d994e55cfcbf4b87e205e36c683a4",
+  "components": [
+    {
+      "id": "left-glass-prism",
+      "name": "Left glass prism",
+      "kind": "plate",
+      "role": "asset",
+      "box": {
+        "x": 0,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.5
+      },
+      "note": "luminous glass prism facet with sharp bevelled edge and light caustics",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/left-glass-prism.png"
+      },
+      "dependencies": []
+    },
+    {
+      "id": "right-glass-prism",
+      "name": "Right glass prism",
+      "kind": "plate",
+      "role": "asset",
+      "box": {
+        "x": 0.8,
+        "y": 0,
+        "w": 0.2,
+        "h": 0.6
+      },
+      "note": "reflective glass corner facet with brilliant highlight refraction and prism ray",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/right-glass-prism.png"
+      },
+      "dependencies": []
+    },
+    {
+      "id": "card-mirror-plate",
+      "name": "Card mirror plate",
+      "kind": "plate",
+      "role": "asset",
+      "box": {
+        "x": 0.2,
+        "y": 0.5,
+        "w": 0.2,
+        "h": 0.3
+      },
+      "note": "photograph of bespoke full-length LED backlit mirror in luxury interior",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/card-mirror-plate.png"
+      },
+      "dependencies": []
+    },
+    {
+      "id": "card-partition-plate",
+      "name": "Card partition plate",
+      "kind": "plate",
+      "role": "asset",
+      "box": {
+        "x": 0.4,
+        "y": 0.5,
+        "w": 0.2,
+        "h": 0.3
+      },
+      "note": "photograph of architectural black steel and glass divider partition",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/card-partition-plate.png"
+      },
+      "dependencies": []
+    },
+    {
+      "id": "card-storefront-plate",
+      "name": "Card storefront plate",
+      "kind": "plate",
+      "role": "asset",
+      "box": {
+        "x": 0.6,
+        "y": 0.5,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "note": "photograph of modern glass storefront entrance with large glass panes",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/card-storefront-plate.png"
+      },
+      "dependencies": []
+    },
+    {
+      "id": "lower-card-shower-plate",
+      "name": "Lower card shower plate",
+      "kind": "plate",
+      "role": "asset",
+      "box": {
+        "x": 0.2,
+        "y": 0.9,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "note": "photograph of custom glass shower enclosure",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/lower-card-shower-plate.png"
+      },
+      "dependencies": []
+    },
+    {
+      "id": "lower-card-doors-plate",
+      "name": "Lower card doors plate",
+      "kind": "plate",
+      "role": "asset",
+      "box": {
+        "x": 0.4,
+        "y": 0.9,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "note": "photograph of sliding tempered glass doors",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/lower-card-doors-plate.png"
+      },
+      "dependencies": []
+    },
+    {
+      "id": "lower-card-frameless-plate",
+      "name": "Lower card frameless plate",
+      "kind": "plate",
+      "role": "asset",
+      "box": {
+        "x": 0.6,
+        "y": 0.9,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "note": "photograph of curved frameless decorative wall mirrors",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/lower-card-frameless-plate.png"
+      },
+      "dependencies": []
+    },
+    {
+      "id": "masthead-brand",
+      "name": "Masthead brand",
+      "kind": "chrome",
+      "role": "plan",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "note": "logo icon and brand name text Vidrios, espejos y más",
+      "medium": "code",
+      "preview": {
+        "kind": "comp-crop"
+      },
+      "codeDrawn": false,
+      "dependencies": []
+    }
+  ],
+  "codeRegions": [
+    {
+      "id": "nav-links",
+      "name": "Nav links",
+      "kind": "control",
+      "box": {
+        "x": 0.4,
+        "y": 0,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "note": "navigation links for Espejos, Mamparas, Vidrieras, Contacto"
+    },
+    {
+      "id": "nav-cta",
+      "name": "Nav cta",
+      "kind": "control",
+      "box": {
+        "x": 0.7217,
+        "y": 0.0078,
+        "w": 0.1047,
+        "h": 0.0703
+      },
+      "note": "green WhatsApp button in top navigation bar"
+    },
+    {
+      "id": "badges-strip",
+      "name": "Badges strip",
+      "kind": "control",
+      "box": {
+        "x": 0.383,
+        "y": 0.1628,
+        "w": 0.2398,
+        "h": 0.0378
+      },
+      "note": "location and custom craft pill badges for General Alvear and Fabricación a medida"
+    },
+    {
+      "id": "hero-headline",
+      "name": "Hero headline",
+      "kind": "text",
+      "box": {
+        "x": 0.2,
+        "y": 0.2,
+        "w": 0.6,
+        "h": 0.2
+      },
+      "note": "bold white main title Vidrios, espejos y más"
+    },
+    {
+      "id": "hero-sub",
+      "name": "Hero sub",
+      "kind": "text",
+      "box": {
+        "x": 0.2,
+        "y": 0.3,
+        "w": 0.6,
+        "h": 0.2
+      },
+      "note": "subtitle text La claridad del oficio y el brillo del diseño a medida"
+    },
+    {
+      "id": "hero-cta",
+      "name": "Hero cta",
+      "kind": "control",
+      "box": {
+        "x": 0.4128,
+        "y": 0.4154,
+        "w": 0.1744,
+        "h": 0.0781
+      },
+      "note": "emerald green WhatsApp consultation primary CTA button"
+    },
+    {
+      "id": "card-mirror-caption",
+      "name": "Card mirror caption",
+      "kind": "text",
+      "box": {
+        "x": 0.1999,
+        "y": 0.7995,
+        "w": 0.1875,
+        "h": 0.1003
+      },
+      "note": "caption text for bespoke backlit mirrors"
+    },
+    {
+      "id": "card-partition-caption",
+      "name": "Card partition caption",
+      "kind": "text",
+      "box": {
+        "x": 0.4,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "note": "caption text for architectural glass partitions"
+    },
+    {
+      "id": "card-storefront-caption",
+      "name": "Card storefront caption",
+      "kind": "text",
+      "box": {
+        "x": 0.6134,
+        "y": 0.7995,
+        "w": 0.2093,
+        "h": 0.1003
+      },
+      "note": "caption text for modern storefront glass installations"
+    }
+  ]
+}

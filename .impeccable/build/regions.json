@@ -1,0 +1,118 @@
+{
+  "allowUncovered": true,
+  "regions": [
+    {
+      "id": "masthead-brand",
+      "kind": "chrome",
+      "grid": "A0:D0",
+      "note": "logo icon and brand name text Vidrios, espejos y más"
+    },
+    {
+      "id": "nav-links",
+      "kind": "control",
+      "grid": "E0:G0",
+      "note": "navigation links for Espejos, Mamparas, Vidrieras, Contacto"
+    },
+    {
+      "id": "nav-cta",
+      "kind": "control",
+      "grid": "H0:I0",
+      "note": "green WhatsApp button in top navigation bar"
+    },
+    {
+      "id": "badges-strip",
+      "kind": "control",
+      "grid": "D1:G1",
+      "note": "location and custom craft pill badges for General Alvear and Fabricación a medida"
+    },
+    {
+      "id": "hero-headline",
+      "kind": "text",
+      "grid": "C2:H3",
+      "note": "bold white main title Vidrios, espejos y más"
+    },
+    {
+      "id": "hero-sub",
+      "kind": "text",
+      "grid": "C3:H4",
+      "note": "subtitle text La claridad del oficio y el brillo del diseño a medida"
+    },
+    {
+      "id": "hero-cta",
+      "kind": "control",
+      "grid": "E4:F4",
+      "note": "emerald green WhatsApp consultation primary CTA button"
+    },
+    {
+      "id": "left-glass-prism",
+      "kind": "plate",
+      "grid": "A1:B5",
+      "note": "luminous glass prism facet with sharp bevelled edge and light caustics"
+    },
+    {
+      "id": "right-glass-prism",
+      "kind": "plate",
+      "grid": "I0:J5",
+      "note": "reflective glass corner facet with brilliant highlight refraction and prism ray"
+    },
+    {
+      "id": "card-mirror-plate",
+      "kind": "plate",
+      "grid": "C5:D7",
+      "note": "photograph of bespoke full-length LED backlit mirror in luxury interior"
+    },
+    {
+      "id": "card-mirror-caption",
+      "kind": "text",
+      "grid": "C8:D8",
+      "note": "caption text for bespoke backlit mirrors"
+    },
+    {
+      "id": "card-partition-plate",
+      "kind": "plate",
+      "grid": "E5:F7",
+      "bleed": true,
+      "note": "photograph of architectural black steel and glass divider partition"
+    },
+    {
+      "id": "card-partition-caption",
+      "kind": "text",
+      "grid": "E8:F8",
+      "note": "caption text for architectural glass partitions"
+    },
+    {
+      "id": "card-storefront-plate",
+      "kind": "plate",
+      "grid": "G5:I7",
+      "bleed": true,
+      "note": "photograph of modern glass storefront entrance with large glass panes"
+    },
+    {
+      "id": "card-storefront-caption",
+      "kind": "text",
+      "grid": "G8:I8",
+      "note": "caption text for modern storefront glass installations"
+    },
+    {
+      "id": "lower-card-shower-plate",
+      "kind": "plate",
+      "grid": "C9:D9",
+      "bleed": true,
+      "note": "photograph of custom glass shower enclosure"
+    },
+    {
+      "id": "lower-card-doors-plate",
+      "kind": "plate",
+      "grid": "E9:F9",
+      "bleed": true,
+      "note": "photograph of sliding tempered glass doors"
+    },
+    {
+      "id": "lower-card-frameless-plate",
+      "kind": "plate",
+      "grid": "G9:I9",
+      "bleed": true,
+      "note": "photograph of curved frameless decorative wall mirrors"
+    }
+  ]
+}

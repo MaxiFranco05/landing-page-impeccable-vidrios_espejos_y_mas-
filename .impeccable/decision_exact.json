@@ -1,0 +1,65 @@
+﻿{
+    "inventoryConfirmed":  true,
+    "decisions":  {
+                      "lower-card-shower-plate":  {
+                                                      "revision":  "d41b047157878174641220aa85f8c633f294343b97741366b97d07233dff47fe",
+                                                      "split":  false,
+                                                      "feedback":  "",
+                                                      "action":  "approve"
+                                                  },
+                      "lower-card-doors-plate":  {
+                                                     "revision":  "11a3ff6df9800dd6d19f47067a1ea981aa1e8ca5d4f04a9ba250222b7db93499",
+                                                     "split":  false,
+                                                     "feedback":  "",
+                                                     "action":  "approve"
+                                                 },
+                      "card-storefront-plate":  {
+                                                    "revision":  "52760b425dc06f5642fb52915402c08262348402cbc2edb1b827cdeb9d3ab5ea",
+                                                    "split":  false,
+                                                    "feedback":  "",
+                                                    "action":  "approve"
+                                                },
+                      "right-glass-prism":  {
+                                                "revision":  "6a30300d91edf04d22703e172906223d41f5d5eb1f8aabb4037bdad59f912c02",
+                                                "split":  false,
+                                                "feedback":  "",
+                                                "action":  "approve"
+                                            },
+                      "masthead-brand":  {
+                                             "revision":  "fa419423c41d68a1a270ae493df095374c4220582dfac19c948e7b32f752eb36",
+                                             "split":  false,
+                                             "feedback":  "",
+                                             "action":  "approve"
+                                         },
+                      "card-partition-plate":  {
+                                                   "revision":  "dbccfeac91d9e782a136bd35bd4a31c7ca2f9f06892f78687bd77b9991f1960e",
+                                                   "split":  false,
+                                                   "feedback":  "",
+                                                   "action":  "approve"
+                                               },
+                      "card-mirror-plate":  {
+                                                "revision":  "d1718dfb1fffc4bccf79c1d5b97cb43b67b6923cdc8823cbf0eb0f169e58eb7a",
+                                                "split":  false,
+                                                "feedback":  "",
+                                                "action":  "approve"
+                                            },
+                      "left-glass-prism":  {
+                                               "revision":  "ed841972ee9fe779d6315011c4264ff96405f46cf05aaa79b0c3e807c17271c6",
+                                               "split":  false,
+                                               "feedback":  "",
+                                               "action":  "approve"
+                                           },
+                      "lower-card-frameless-plate":  {
+                                                         "revision":  "296c250d52960a7e6d1077ae376d8b934c49c3f54a7d5977bd14eac40286e2f6",
+                                                         "split":  false,
+                                                         "feedback":  "",
+                                                         "action":  "approve"
+                                                     }
+                  },
+    "packetRevision":  "3724770aaa1bc0414fa501704ef7c52eb7796913a67386689927d9ec11ade192",
+    "requestId":  "components",
+    "schemaVersion":  1,
+    "missing":  [
+
+                ]
+}
