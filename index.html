@@ -772,35 +772,38 @@
       margin: 28px auto 0 auto;
     }
     .testimonials-carousel {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      padding: 10px 0 18px 0;
+      touch-action: pan-y;
+      cursor: grab;
+    }
+    .testimonials-carousel:active {
+      cursor: grabbing;
+    }
+    .testimonials-track {
       display: flex;
       gap: 20px;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      padding: 10px 4px 18px 4px;
+      width: 100%;
+      will-change: transform;
     }
-    .testimonials-carousel::-webkit-scrollbar {
-      display: none;
-    }
-    .testimonials-carousel .testimonial-card {
+    .testimonials-track .testimonial-card {
       flex: 0 0 calc((100% - 40px) / 3);
       min-width: 280px;
-      scroll-snap-align: start;
+      box-sizing: border-box;
       user-select: none;
     }
     @media (max-width: 960px) {
-      .testimonials-carousel .testimonial-card {
+      .testimonials-track .testimonial-card {
         flex: 0 0 calc((100% - 20px) / 2);
         min-width: 260px;
       }
     }
     @media (max-width: 640px) {
-      .testimonials-carousel .testimonial-card {
+      .testimonials-track .testimonial-card {
         flex: 0 0 85%;
         min-width: 240px;
-        scroll-snap-align: center;
       }
     }
     .carousel-nav {
@@ -1457,8 +1460,6 @@
         </div>
       </div>
     </section>
-      </div>
-    </section>
 
     <!-- Section: Tolerancias y Materiales -->
     <section id="materiales" class="section-wrap alt-bg">
@@ -1784,134 +1785,261 @@
 
         // Actualizar Testimonios si hay cambios en CMS
         if (resTestimonios && Array.isArray(resTestimonios.items) && resTestimonios.items.length > 0) {
-          const carousel = document.getElementById('testimonials-carousel');
-          if (carousel) {
-            carousel.innerHTML = resTestimonios.items.map(t => `
-              <article class="testimonial-card">
-                <p class="testimonial-quote">“${t.comentario}”</p>
-                <div class="testimonial-meta">
-                  <span class="testimonial-author">${t.nombre}</span>
-                  <span class="testimonial-badge">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#34a853"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                    ${t.fuente || 'Google Maps'}
-                  </span>
-                </div>
-              </article>
-            `).join('');
-            initTestimonialsCarousel();
-          }
+          initTestimonialsCarousel(resTestimonios.items);
         }
       } catch (err) {
         console.warn('CMS Hydration note:', err);
       }
     })();
 
-    // Lógica del Carrusel Táctil y Rotativo de Opiniones
-    function initTestimonialsCarousel() {
+    // Lógica del Carrusel Infinito, Táctil y Rotativo de Opiniones
+    let testimonialsCarouselTimer = null;
+
+    function initTestimonialsCarousel(customItems) {
       const carousel = document.getElementById('testimonials-carousel');
       const prevBtn = document.getElementById('carousel-prev');
       const nextBtn = document.getElementById('carousel-next');
       const dotsWrap = document.getElementById('carousel-dots');
       if (!carousel) return;
 
-      const cards = carousel.querySelectorAll('.testimonial-card');
-      if (!cards.length) return;
+      // Limpiar timer previo si existía
+      if (testimonialsCarouselTimer) {
+        clearInterval(testimonialsCarouselTimer);
+        testimonialsCarouselTimer = null;
+      }
 
+      // Obtener items (desde CMS o desde el DOM inicial)
+      let items = [];
+      if (Array.isArray(customItems) && customItems.length > 0) {
+        items = customItems;
+      } else {
+        const existingCards = carousel.querySelectorAll('.testimonial-card:not([data-clone])');
+        if (existingCards.length > 0) {
+          existingCards.forEach(c => {
+            const quoteEl = c.querySelector('.testimonial-quote');
+            const authorEl = c.querySelector('.testimonial-author');
+            const badgeEl = c.querySelector('.testimonial-badge');
+            items.push({
+              comentario: quoteEl ? quoteEl.textContent.replace(/^[“"]|[”"]$/g, '') : '',
+              nombre: authorEl ? authorEl.textContent : '',
+              fuente: badgeEl ? badgeEl.textContent.trim() : 'Google Maps'
+            });
+          });
+        }
+      }
+
+      if (!items.length) return;
+
+      const N = items.length;
+      const CLONES_COUNT = Math.min(3, N);
+
+      function renderCard(t, isClone, originalIdx) {
+        return `
+          <article class="testimonial-card" ${isClone ? 'data-clone="true"' : ''} data-index="${originalIdx}">
+            <p class="testimonial-quote">“${t.comentario}”</p>
+            <div class="testimonial-meta">
+              <span class="testimonial-author">${t.nombre}</span>
+              <span class="testimonial-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#34a853"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                ${t.fuente || 'Google Maps'}
+              </span>
+            </div>
+          </article>
+        `;
+      }
+
+      let trackHTML = '';
+      // Clones al inicio (los últimos CLONES_COUNT items)
+      for (let i = N - CLONES_COUNT; i < N; i++) {
+        trackHTML += renderCard(items[i], true, i);
+      }
+      // Items reales
+      for (let i = 0; i < N; i++) {
+        trackHTML += renderCard(items[i], false, i);
+      }
+      // Clones al final (los primeros CLONES_COUNT items)
+      for (let i = 0; i < CLONES_COUNT; i++) {
+        trackHTML += renderCard(items[i], true, i);
+      }
+
+      carousel.innerHTML = `<div class="testimonials-track" id="testimonials-track">${trackHTML}</div>`;
+      const track = document.getElementById('testimonials-track');
+
+      let currentIndex = 0; // 0 .. N-1
+      let isAnimating = false;
+
+      // Generar dots correspondientes a cada opinión
       if (dotsWrap) {
         dotsWrap.innerHTML = '';
-        cards.forEach((_, i) => {
+        for (let i = 0; i < N; i++) {
           const dot = document.createElement('button');
           dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
-          dot.setAttribute('aria-label', 'Ir a opinión ' + (i + 1));
+          dot.setAttribute('aria-label', `Ir a opinión ${i + 1} de ${N}`);
           dot.addEventListener('click', () => {
-            scrollToCard(i);
+            goToRealIndex(i);
           });
           dotsWrap.appendChild(dot);
-        });
-      }
-
-      function getStepWidth() {
-        const firstCard = carousel.querySelector('.testimonial-card');
-        if (!firstCard) return 300;
-        const style = window.getComputedStyle(carousel);
-        const gap = parseFloat(style.gap || '20') || 20;
-        return firstCard.offsetWidth + gap;
-      }
-
-      function scrollToCard(index) {
-        const step = getStepWidth();
-        carousel.scrollTo({
-          left: index * step,
-          behavior: 'smooth'
-        });
-        updateDots(index);
+        }
       }
 
       function updateDots(activeIdx) {
         if (!dotsWrap) return;
         const dots = dotsWrap.querySelectorAll('.carousel-dot');
+        const normalized = ((activeIdx % N) + N) % N;
         dots.forEach((d, i) => {
-          d.classList.toggle('active', i === activeIdx);
+          d.classList.toggle('active', i === normalized);
         });
       }
 
-      function stepNext() {
-        const step = getStepWidth();
-        const maxScroll = carousel.scrollWidth - carousel.clientWidth - 10;
-        if (carousel.scrollLeft >= maxScroll) {
-          carousel.scrollTo({ left: 0, behavior: 'smooth' });
-        } else {
-          carousel.scrollBy({ left: step, behavior: 'smooth' });
-        }
+      function getStep() {
+        const firstCard = track.querySelector('.testimonial-card');
+        if (!firstCard) return 300;
+        const style = window.getComputedStyle(track);
+        const gap = parseFloat(style.gap || '20') || 20;
+        return firstCard.offsetWidth + gap;
       }
 
-      function stepPrev() {
-        const step = getStepWidth();
-        if (carousel.scrollLeft <= 10) {
-          carousel.scrollTo({ left: carousel.scrollWidth, behavior: 'smooth' });
-        } else {
-          carousel.scrollBy({ left: -step, behavior: 'smooth' });
+      function getCenterOffset() {
+        if (window.innerWidth <= 640) {
+          const firstCard = track.querySelector('.testimonial-card');
+          if (!firstCard) return 0;
+          return Math.max(0, (carousel.clientWidth - firstCard.offsetWidth) / 2);
         }
+        return 0;
       }
+
+      function setPosition(trackIndex, animate = true) {
+        const step = getStep();
+        const offset = getCenterOffset();
+        const x = -(trackIndex * step - offset);
+        if (animate) {
+          track.style.transition = 'transform 0.45s cubic-bezier(0.25, 1, 0.5, 1)';
+        } else {
+          track.style.transition = 'none';
+        }
+        track.style.transform = `translate3d(${x}px, 0, 0)`;
+      }
+
+      // Posición inicial: índice correspondiente al primer elemento real
+      setPosition(CLONES_COUNT + currentIndex, false);
+
+      function goToRealIndex(targetIdx) {
+        if (isAnimating) return;
+        stopTimer();
+        currentIndex = targetIdx;
+        updateDots(currentIndex);
+        setPosition(CLONES_COUNT + currentIndex, true);
+        startTimer();
+      }
+
+      function next() {
+        if (isAnimating) return;
+        isAnimating = true;
+        currentIndex++;
+        updateDots(currentIndex);
+        setPosition(CLONES_COUNT + currentIndex, true);
+      }
+
+      function prev() {
+        if (isAnimating) return;
+        isAnimating = true;
+        currentIndex--;
+        updateDots(currentIndex);
+        setPosition(CLONES_COUNT + currentIndex, true);
+      }
+
+      track.addEventListener('transitionend', (e) => {
+        if (e.target !== track) return;
+        isAnimating = false;
+        // Bucle infinito sin saltos visuales al cruzar los clones
+        if (currentIndex >= N) {
+          currentIndex = 0;
+          setPosition(CLONES_COUNT + currentIndex, false);
+          updateDots(currentIndex);
+        } else if (currentIndex < 0) {
+          currentIndex = N - 1;
+          setPosition(CLONES_COUNT + currentIndex, false);
+          updateDots(currentIndex);
+        }
+      });
 
       if (prevBtn) {
-        prevBtn.onclick = stepPrev;
+        prevBtn.onclick = () => { stopTimer(); prev(); startTimer(); };
       }
       if (nextBtn) {
-        nextBtn.onclick = stepNext;
+        nextBtn.onclick = () => { stopTimer(); next(); startTimer(); };
       }
 
-      // Sincronizar indicador de puntos con el scroll manual / táctil
-      let scrollTimeout = null;
-      carousel.addEventListener('scroll', () => {
-        window.clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-          const step = getStepWidth();
-          const currentIdx = Math.round(carousel.scrollLeft / step);
-          updateDots(Math.min(cards.length - 1, Math.max(0, currentIdx)));
-        }, 50);
+      // Soporte Táctil / Swipe fluido en móviles
+      let touchStartX = 0;
+      let touchStartY = 0;
+      let isSwiping = false;
+      let isScrolling = undefined;
+      let touchBaseX = 0;
+
+      carousel.addEventListener('touchstart', (e) => {
+        if (e.touches.length !== 1 || isAnimating) return;
+        stopTimer();
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        isSwiping = true;
+        isScrolling = undefined;
+        const step = getStep();
+        const offset = getCenterOffset();
+        touchBaseX = -((CLONES_COUNT + currentIndex) * step - offset);
+        track.style.transition = 'none';
+      }, { passive: true });
+
+      carousel.addEventListener('touchmove', (e) => {
+        if (!isSwiping || e.touches.length !== 1) return;
+        const currentX = e.touches[0].clientX;
+        const currentY = e.touches[0].clientY;
+        const diffX = currentX - touchStartX;
+        const diffY = currentY - touchStartY;
+
+        if (isScrolling === undefined) {
+          isScrolling = Math.abs(diffY) > Math.abs(diffX);
+        }
+
+        if (isScrolling) return;
+
+        if (e.cancelable) e.preventDefault();
+        track.style.transform = `translate3d(${touchBaseX + diffX}px, 0, 0)`;
+      }, { passive: false });
+
+      carousel.addEventListener('touchend', (e) => {
+        if (!isSwiping) return;
+        isSwiping = false;
+        const diffX = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(diffX) > 40) {
+          if (diffX < 0) {
+            next();
+          } else {
+            prev();
+          }
+        } else {
+          setPosition(CLONES_COUNT + currentIndex, true);
+        }
+        startTimer();
       }, { passive: true });
 
       // Rotación automática cada 4.5 segundos
-      let autoTimer = null;
       function startTimer() {
         stopTimer();
-        autoTimer = setInterval(stepNext, 4500);
+        testimonialsCarouselTimer = setInterval(next, 4500);
       }
       function stopTimer() {
-        if (autoTimer) {
-          clearInterval(autoTimer);
-          autoTimer = null;
+        if (testimonialsCarouselTimer) {
+          clearInterval(testimonialsCarouselTimer);
+          testimonialsCarouselTimer = null;
         }
       }
 
       startTimer();
 
-      // Pausar rotación en hover o toque
+      // Pausar rotación en hover
       carousel.addEventListener('mouseenter', stopTimer);
       carousel.addEventListener('mouseleave', startTimer);
-      carousel.addEventListener('touchstart', stopTimer, { passive: true });
-      carousel.addEventListener('touchend', startTimer);
       if (prevBtn) {
         prevBtn.addEventListener('mouseenter', stopTimer);
         prevBtn.addEventListener('mouseleave', startTimer);
@@ -1920,6 +2048,15 @@
         nextBtn.addEventListener('mouseenter', stopTimer);
         nextBtn.addEventListener('mouseleave', startTimer);
       }
+
+      // Recalibrar posición suavemente al redimensionar ventana
+      let resizeTimeout = null;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          setPosition(CLONES_COUNT + currentIndex, false);
+        }, 100);
+      });
     }
 
     // Inicializar carrusel en carga inicial
